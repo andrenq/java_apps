@@ -1,8 +1,11 @@
 # Java apps
 
-One Paragraph of project description goes here
+This repository contains three java apps.
+Grep - Implementaion of the grep command in java. 
+JDBC
+Twitter
 
-## [](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2#getting-started)Getting Started
+# Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
@@ -81,5 +84,5 @@ We use  [SemVer](http://semver.org/)  for versioning. For the versions available
 
 See also the list of  [contributors](https://github.com/your/project/contributors)  who participated in this project.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMTEzOTgxMl19
+eyJoaXN0b3J5IjpbODY2ODUxODQ5XX0=
 -->
