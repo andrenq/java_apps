@@ -5,17 +5,14 @@ This repository contains three java apps.
 - Twitter - 
 
 # Getting Started
-### Grep - 
-Prerequisites
+### Grep 
+For the grep app no instalations are required. All you need is to execute the code .
 
-What things you need to install the software and how to install them
+### JDBC
 
-```
-Give examples
+### Twitter
 
-```
-
-### [](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2#installing)Installing
+Installing
 
 A step by step series of examples that tell you how to get a development env running
 
@@ -81,5 +78,5 @@ We use  [SemVer](http://semver.org/)  for versioning. For the versions available
 
 See also the list of  [contributors](https://github.com/your/project/contributors)  who participated in this project.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczODgzMzU4NF19
+eyJoaXN0b3J5IjpbLTE5NDI0MDcwNTldfQ==
 -->
