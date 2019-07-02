@@ -4,13 +4,16 @@ This repository contains three java apps.
 - JDBC -
 - Twitter - 
 
-# Grep 
+# Grep java app
 ### Getting Started
-For the grep app no instalations are required. All you need is to execute the code .
+For the grep app no instalations are required. All you need is to execute the code.
+The code is divided into three files:
+
+ - List item
 
 ### Usage
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTQ4ODc3OThdfQ==
+eyJoaXN0b3J5IjpbLTIyNzcxNzI4M119
 -->
