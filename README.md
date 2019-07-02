@@ -12,27 +12,7 @@ For the grep app no instalations are required. All you need is to execute the co
 
 ### Twitter
 
-Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-
-```
-
-And repeat
-
-```
-until finished
-
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## [](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2#running-the-tests)Running the tests
+# Usage
 
 Explain how to run the automated tests for this system
 
@@ -78,5 +58,5 @@ We use  [SemVer](http://semver.org/)  for versioning. For the versions available
 
 See also the list of  [contributors](https://github.com/your/project/contributors)  who participated in this project.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDI0MDcwNTldfQ==
+eyJoaXN0b3J5IjpbMTE1MjUxMjMyOV19
 -->
