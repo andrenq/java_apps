@@ -1,9 +1,10 @@
 # Java apps
 
 This repository contains three java apps.
-Grep - Implementaion of the grep command in java. 
-JDBC
-Twitter
+- Grep - Implementaion of the grep command in java. The app searches for a text pattern recursively in a given directory, and output matched lines.
+to a file
+- JDBC -
+- Twitter - 
 
 # Getting Started
 
@@ -84,5 +85,5 @@ We use  [SemVer](http://semver.org/)  for versioning. For the versions available
 
 See also the list of  [contributors](https://github.com/your/project/contributors)  who participated in this project.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY2ODUxODQ5XX0=
+eyJoaXN0b3J5IjpbLTI4MDgzMDYyNV19
 -->
