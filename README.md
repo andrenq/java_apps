@@ -8,11 +8,12 @@ This repository contains three java apps.
 ### Getting Started
 For the grep app no instalations are required. All you need is to execute the code.
 The code is divided into three files:
- - JavaGrep - it is the application implementation. Contains all meho
+ - `JavaGrep is the application interface. Contains methods and atributes.
+ - JavaGrepImp is the implementaion of JavaGrep
 
 ### Usage
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNTI3NzQxOF19
+eyJoaXN0b3J5IjpbMTMyMzM4NTU0Ml19
 -->
