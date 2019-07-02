@@ -8,12 +8,11 @@ This repository contains three java apps.
 ### Getting Started
 For the grep app no instalations are required. All you need is to execute the code.
 The code is divided into three files:
-
- - List item
+ - JavaGrep - it is the application implementation. Contains all meho
 
 ### Usage
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNzcxNzI4M119
+eyJoaXN0b3J5IjpbLTUxNTI3NzQxOF19
 -->
