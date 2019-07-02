@@ -1,12 +1,11 @@
 # Java apps
-
 This repository contains three java apps.
 - Grep - Implementaion of the grep command in java. The app searches for a text pattern recursively in a given directory, and outputs all matched lines to a file.
 - JDBC -
 - Twitter - 
 
 # Getting Started
-## - Grepe
+### Grep - 
 Prerequisites
 
 What things you need to install the software and how to install them
@@ -82,5 +81,5 @@ We use  [SemVer](http://semver.org/)  for versioning. For the versions available
 
 See also the list of  [contributors](https://github.com/your/project/contributors)  who participated in this project.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjYwNDk4OTZdfQ==
+eyJoaXN0b3J5IjpbMTczODgzMzU4NF19
 -->
