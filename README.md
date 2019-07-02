@@ -17,8 +17,8 @@ The Java Grep app searches for a regular expression on all files inside a base d
 To execute the `JavaGrepApp` you must pass the parameters belown in order:
  1. Regular expression
  2. Base directory
- 3. Output 
-
+ 3. Output file
+E.g.: To search for the word "data" on all files on the /user/a `java JavaGrepApp .\*data.\*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NDkzOTYxOF19
+eyJoaXN0b3J5IjpbLTE0MjQ1NzAwN119
 -->
