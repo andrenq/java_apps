@@ -7,7 +7,8 @@ This repository contains three java apps.
 # Java Grep app
 ### Getting Started
 For the Java Grep app, no installations are required. All you need is to execute the code using Java 8.
-The code is divided into three files:
+
+This app is divided into three files:
  - `JavaGrep` is the application interface. Contains methods and attributes.
  - `JavaGrepImp` is the implementation of `JavaGrep`. Implements all methods and adds new ones.
  - `JavaGrepApp` provides the main method. It is used to execute the application.
@@ -21,5 +22,5 @@ To execute the `JavaGrepApp` you must pass the parameters belown in order:
 E.g.: To search for the word "data" on all files on the /user/app directory an output the results to /tmp/grep.out 
  `java JavaGrepApp .\*data.\* /user/app /tmp/grep.out`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzY3NzQ2NzhdfQ==
+eyJoaXN0b3J5IjpbMjA0MTQ0Mjk2NV19
 -->
