@@ -23,7 +23,9 @@ To execute the `JavaGrepApp`, you must pass the parameters below in order:
 E.g., To search for the word "data" on all files on the /user/app directory and output the results to /tmp/grep.out :
  `java JavaGrepApp .\*data.\* /user/app /tmp/grep.out`
  In the end, the app will display a message with all files that it was not able to read.
+ # Java Grep app
+ # Twitter
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgyMDU1MTUzLC0xNjk4ODAxMjU3LDIwND
-E0NDI5NjVdfQ==
+eyJoaXN0b3J5IjpbMTg2NzE0MTcyNywtMTY5ODgwMTI1NywyMD
+QxNDQyOTY1XX0=
 -->
