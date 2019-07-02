@@ -13,9 +13,10 @@ The code is divided into three files:
  - `JavaGrepApp` provides the main method. It is used to execute the application.
 
 ### Usage
-The Java Grep app searches for regular expression on all files inside a base directory and outputs all lines where the regular expression was found to a given file.
-
+The Java Grep app searches for a regular expression on all files inside a base directory and outputs all the lines where the regular expression was found to a file.
+To execute the `JavaGrepApp` you must pass three parameters:
+ - List item
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDIwMDE3ODJdfQ==
+eyJoaXN0b3J5IjpbLTIxMTkyMzgyMF19
 -->
