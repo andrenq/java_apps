@@ -15,15 +15,15 @@ This app is divided into three files:
 
 ### Usage
 The Java Grep app searches for a regular expression on all files inside a base directory and outputs all the lines where the regular expression was found to a file.
-To execute the `JavaGrepApp` you must pass the parameters belown in order:
+To execute the `JavaGrepApp`, you must pass the parameters below in order:
  1. Regular expression
  2. Base directory
  3. Output file
 
-E.g.: To search for the word "data" on all files on the /user/app directory and output the results to /tmp/grep.out :
+E.g., To search for the word "data" on all files on the /user/app directory and output the results to /tmp/grep.out :
  `java JavaGrepApp .\*data.\* /user/app /tmp/grep.out`
- The app will display a message at the end with all files that it was not able to read.
+ In the end, the app will display a message with all files that it was not able to read.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NTIzODkzOSwtMTY5ODgwMTI1NywyMD
-QxNDQyOTY1XX0=
+eyJoaXN0b3J5IjpbMzgyMDU1MTUzLC0xNjk4ODAxMjU3LDIwND
+E0NDI5NjVdfQ==
 -->
