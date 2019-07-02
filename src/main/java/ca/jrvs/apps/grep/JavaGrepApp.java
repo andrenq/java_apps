@@ -5,7 +5,7 @@ import java.io.IOException;
 public class JavaGrepApp {
     public static void main(String[] args) throws IOException {
         if (args.length != 3) {
-            throw new IllegalArgumentException("USAGE regex rootPath outFile");
+            throw new IllegalArgumentException("Missing arguments.\n - USAGE: regex rootPath outFile");
         }
         JavaGrepImp javaGrepImp = new JavaGrepImp();
         javaGrepImp.setRegex(args[0]);
