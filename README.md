@@ -24,8 +24,10 @@ E.g., To search for the word "data" on all files on the /user/app directory and 
  `java JavaGrepApp .\*data.\* /user/app /tmp/grep.out`
  In the end, the app will display a message with all files that it was not able to read.
  # Java Grep app
+ ### Getting Started
+ Working PostgreSql database
  # Twitter
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NzE0MTcyNywtMTY5ODgwMTI1NywyMD
-QxNDQyOTY1XX0=
+eyJoaXN0b3J5IjpbLTQ2NzU2OTk4OSwxODY3MTQxNzI3LC0xNj
+k4ODAxMjU3LDIwNDE0NDI5NjVdfQ==
 -->
