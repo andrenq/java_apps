@@ -13,8 +13,8 @@ The code is divided into three files:
  - `JavaGrepApp` contains the main method. It is used to execute the application.
 
 ### Usage
-
+The Java Grep app searches for a given Regex expression on all files inside a f
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODgxMTA2ODldfQ==
+eyJoaXN0b3J5IjpbOTc4NzY3ODgzXX0=
 -->
