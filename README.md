@@ -1,16 +1,13 @@
 # Java apps
 
 This repository contains three java apps.
-- Grep - Implementaion of the grep command in java. The app searches for a text pattern recursively in a given directory, and output matched lines.
-to a file
+- Grep - Implementaion of the grep command in java. The app searches for a text pattern recursively in a given directory, and outputs all matched lines to a file.
 - JDBC -
 - Twitter - 
 
 # Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### [](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2#prerequisites)Prerequisites
+## - Grepe
+Prerequisites
 
 What things you need to install the software and how to install them
 
@@ -85,5 +82,5 @@ We use  [SemVer](http://semver.org/)  for versioning. For the versions available
 
 See also the list of  [contributors](https://github.com/your/project/contributors)  who participated in this project.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4MDgzMDYyNV19
+eyJoaXN0b3J5IjpbLTEwMjYwNDk4OTZdfQ==
 -->
