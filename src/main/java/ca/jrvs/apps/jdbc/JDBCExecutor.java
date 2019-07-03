@@ -8,7 +8,7 @@ import java.sql.Statement;
 public class JDBCExecutor {
     public static void main(String[] args) {
         DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost", "hplussport",
-                "postgres", "password");
+                "postgres", args[0]); //args[0] = your password
         try {
             Connection connection = dcm.getConnection();
             CustomerDAO customerDAO = new CustomerDAO(connection);
