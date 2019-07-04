@@ -2,7 +2,7 @@
 This repository contains three java apps.
 - [Java Grep app](#grep) - Implementation of the grep command in java. The app searches for a text pattern recursively in a given directory and outputs all matched lines to a file.
 - [JDBC](#jdbc) - Example of Java Database Connectivity (JDBC) API usage. This app uses Data Access Object (DAO) to read and manage data from a Postgre database.
-- [Twitter] (#twitter)- 
+- [Twitter](#twitter)- 
 <a name="grep"></a>
 # Java Grep app
 ### Getting Started
@@ -45,7 +45,7 @@ E.g., To search for the word "data" on all files on the /user/app directory and 
  <a name="twitter"></a>
  # Twitter
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0NTg5ODUxNiwtNzQ1Njg2NzA4LDE0ND
+eyJoaXN0b3J5IjpbLTUzODQzMzg4OCwtNzQ1Njg2NzA4LDE0ND
 U4MjE2NDcsLTE1MTI4OTkzODYsMTEwOTExNTExNCwtNzA0MjMy
 NDk3LC0xNjQ3Mjc3NTkyLC0xMjkyOTE2MjEyLDg3MzExMTAwMy
 wtMTQyOTUyNTQxNiwtMjA4MTM0NDQwMCwtNDY3NTY5OTg5LDE4
