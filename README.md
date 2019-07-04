@@ -1,7 +1,7 @@
 # Java apps
 This repository contains three java apps.
 - Java Grep app - Implementation of the grep command in java. The app searches for a text pattern recursively in a given directory and outputs all matched lines to a file.
-- JDBC -
+- JDBC - Example of Java Database Connectivity (JDBC) API usage.
 - Twitter - 
 
 # Java Grep app
@@ -23,11 +23,12 @@ To execute the `JavaGrepApp`, you must pass the parameters below in order:
 E.g., To search for the word "data" on all files on the /user/app directory and output the results to /tmp/grep.out :
  `java JavaGrepApp .\*data.\* /user/app /tmp/grep.out`
  In the end, the app will display a message with all files that it was not able to read.
- # JDBC app
+ # JDBC 
   ### Getting Started
  Working PostgreSql database
  # Twitter
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODEzNDQ0MDAsLTQ2NzU2OTk4OSwxOD
-Y3MTQxNzI3LC0xNjk4ODAxMjU3LDIwNDE0NDI5NjVdfQ==
+eyJoaXN0b3J5IjpbLTk0Mjg5MTg4MSwtMjA4MTM0NDQwMCwtND
+Y3NTY5OTg5LDE4NjcxNDE3MjcsLTE2OTg4MDEyNTcsMjA0MTQ0
+Mjk2NV19
 -->
