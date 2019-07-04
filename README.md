@@ -28,12 +28,13 @@ E.g., To search for the word "data" on all files on the /user/app directory and 
  Access the README file on `/jdbc_sql_ddl` and follow it to create the hplussport database and necessary tables.
 ![image](https://drive.google.com/uc?export=view&id=1DvVW11_Hclm7Yhe90woBky0K2UUbrpk3)
   
-  The java program is divided 
+  The java program is divided into 
  Working PostgreSql database
  # Twitter
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwOTExNTExNCwtNzA0MjMyNDk3LC0xNj
-Q3Mjc3NTkyLC0xMjkyOTE2MjEyLDg3MzExMTAwMywtMTQyOTUy
-NTQxNiwtMjA4MTM0NDQwMCwtNDY3NTY5OTg5LDE4NjcxNDE3Mj
-csLTE2OTg4MDEyNTcsMjA0MTQ0Mjk2NV19
+eyJoaXN0b3J5IjpbLTE1MTI4OTkzODYsMTEwOTExNTExNCwtNz
+A0MjMyNDk3LC0xNjQ3Mjc3NTkyLC0xMjkyOTE2MjEyLDg3MzEx
+MTAwMywtMTQyOTUyNTQxNiwtMjA4MTM0NDQwMCwtNDY3NTY5OT
+g5LDE4NjcxNDE3MjcsLTE2OTg4MDEyNTcsMjA0MTQ0Mjk2NV19
+
 -->
