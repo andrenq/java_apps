@@ -35,15 +35,17 @@ E.g., To search for the word "data" on all files on the /user/app directory and 
  3. `/util/DataTransferObject` is the DTO interface
  4. `DatabaseConnectionManager` handles the connection to the Postgres database using JDBC
  5. `Customer` implements the customer class
- 6. `CustomerDAO`handles the 
- 7. `OrderLine`
- 8. `Order`
- 9. `OrderDAO`
+ 6. `CustomerDAO`creates the data access object to the class customer
+ 7. `OrderLine` implements the OredrLine class
+ 8. `Order` implements the Order class
+ 9. `OrderDAO` creates the data access object to the class Order
+
+### Usage
 
  <a name="twitter"></a>
  # Twitter
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0MjIwNDEyLC03NDU2ODY3MDgsMTQ0NT
+eyJoaXN0b3J5IjpbOTgzMjUyODEyLC03NDU2ODY3MDgsMTQ0NT
 gyMTY0NywtMTUxMjg5OTM4NiwxMTA5MTE1MTE0LC03MDQyMzI0
 OTcsLTE2NDcyNzc1OTIsLTEyOTI5MTYyMTIsODczMTExMDAzLC
 0xNDI5NTI1NDE2LC0yMDgxMzQ0NDAwLC00Njc1Njk5ODksMTg2
