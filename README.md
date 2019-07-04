@@ -26,14 +26,13 @@ E.g., To search for the word "data" on all files on the /user/app directory and 
  # JDBC 
   ### Getting Started
  Access the README file on `/jdbc_sql_ddl` and follow it to create the database and necessary tables.
-https://drive.google.com/open?id=1DvVW11_Hclm7Yhe90woBky0K2UUbrpk3
-
+![image](https://drive.google.com/uc?export=view&id=1DvVW11_Hclm7Yhe90woBky0K2UUbrpk3)
   
  Working PostgreSql database
  # Twitter
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNDIzMjQ5NywtMTY0NzI3NzU5MiwtMT
-I5MjkxNjIxMiw4NzMxMTEwMDMsLTE0Mjk1MjU0MTYsLTIwODEz
-NDQ0MDAsLTQ2NzU2OTk4OSwxODY3MTQxNzI3LC0xNjk4ODAxMj
-U3LDIwNDE0NDI5NjVdfQ==
+eyJoaXN0b3J5IjpbLTk3MjAyNDA0MiwtNzA0MjMyNDk3LC0xNj
+Q3Mjc3NTkyLC0xMjkyOTE2MjEyLDg3MzExMTAwMywtMTQyOTUy
+NTQxNiwtMjA4MTM0NDQwMCwtNDY3NTY5OTg5LDE4NjcxNDE3Mj
+csLTE2OTg4MDEyNTcsMjA0MTQ0Mjk2NV19
 -->
