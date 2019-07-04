@@ -43,15 +43,17 @@ E.g., To search for the word "data" on all files on the /user/app directory and 
 ### Usage
 The app expects the database connection variables (PGHOST=host adress , PGUSER=username, PGPASSWORD=yourpassword) to be passed as enviromental variables or as arguments on the previous order.
 E.g.,`/jdbc/java JDBCExecutor localhost postgres 1234`
-You will be able to call all methds on CustomerDAO and OrderDAO from `JDBCExecutor` , using the main method. You will notece that the main method already contain a few examples.
+
+You will be able to call all methods on CustomerDAO and OrderDAO from `JDBCExecutor` , using the main method. You will notece that the main method already contain a few examples.
 
 
  <a name="twitter"></a>
  # Twitter
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MDk1OTEyNywtNzQ1Njg2NzA4LDE0ND
-U4MjE2NDcsLTE1MTI4OTkzODYsMTEwOTExNTExNCwtNzA0MjMy
-NDk3LC0xNjQ3Mjc3NTkyLC0xMjkyOTE2MjEyLDg3MzExMTAwMy
-wtMTQyOTUyNTQxNiwtMjA4MTM0NDQwMCwtNDY3NTY5OTg5LDE4
-NjcxNDE3MjcsLTE2OTg4MDEyNTcsMjA0MTQ0Mjk2NV19
+eyJoaXN0b3J5IjpbLTEyMzI4OTUyMiwtMzkwOTU5MTI3LC03ND
+U2ODY3MDgsMTQ0NTgyMTY0NywtMTUxMjg5OTM4NiwxMTA5MTE1
+MTE0LC03MDQyMzI0OTcsLTE2NDcyNzc1OTIsLTEyOTI5MTYyMT
+IsODczMTExMDAzLC0xNDI5NTI1NDE2LC0yMDgxMzQ0NDAwLC00
+Njc1Njk5ODksMTg2NzE0MTcyNywtMTY5ODgwMTI1NywyMDQxND
+QyOTY1XX0=
 -->
