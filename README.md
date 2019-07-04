@@ -41,13 +41,13 @@ E.g., To search for the word "data" on all files on the /user/app directory and 
  9. `OrderDAO` creates the data access object to the class Order
 
 ### Usage
-
+The app expects the connection variables host adress
  <a name="twitter"></a>
  # Twitter
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgzMjUyODEyLC03NDU2ODY3MDgsMTQ0NT
-gyMTY0NywtMTUxMjg5OTM4NiwxMTA5MTE1MTE0LC03MDQyMzI0
-OTcsLTE2NDcyNzc1OTIsLTEyOTI5MTYyMTIsODczMTExMDAzLC
-0xNDI5NTI1NDE2LC0yMDgxMzQ0NDAwLC00Njc1Njk5ODksMTg2
-NzE0MTcyNywtMTY5ODgwMTI1NywyMDQxNDQyOTY1XX0=
+eyJoaXN0b3J5IjpbMjA5MzQxNTEyMiwtNzQ1Njg2NzA4LDE0ND
+U4MjE2NDcsLTE1MTI4OTkzODYsMTEwOTExNTExNCwtNzA0MjMy
+NDk3LC0xNjQ3Mjc3NTkyLC0xMjkyOTE2MjEyLDg3MzExMTAwMy
+wtMTQyOTUyNTQxNiwtMjA4MTM0NDQwMCwtNDY3NTY5OTg5LDE4
+NjcxNDE3MjcsLTE2OTg4MDEyNTcsMjA0MTQ0Mjk2NV19
 -->
