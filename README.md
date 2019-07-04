@@ -32,13 +32,14 @@ E.g., To search for the word "data" on all files on the /user/app directory and 
   
 
  1. `JDBCExecutor` contains the main method, and executes all commands.
- 2. DataAccessObject
- 3. DataTransferObject
+ 2. `/util/DataAccessObject` is the DAO interface
+ 3. `/util/DataTransferObject` is the DTO interface
+ 4. `DatabaseConnectionManager`
 
  Working PostgreSql database
  # Twitter
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MjYzNDg0MCwtMTUxMjg5OTM4NiwxMT
+eyJoaXN0b3J5IjpbMTkyNTExMjkxNywtMTUxMjg5OTM4NiwxMT
 A5MTE1MTE0LC03MDQyMzI0OTcsLTE2NDcyNzc1OTIsLTEyOTI5
 MTYyMTIsODczMTExMDAzLC0xNDI5NTI1NDE2LC0yMDgxMzQ0ND
 AwLC00Njc1Njk5ODksMTg2NzE0MTcyNywtMTY5ODgwMTI1Nywy
