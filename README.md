@@ -30,7 +30,7 @@ E.g., To search for the word "data" on all files on the /user/app directory and 
 ![image](https://drive.google.com/uc?export=view&id=1DvVW11_Hclm7Yhe90woBky0K2UUbrpk3)
   
   JDBC java app is divided into nine files:
- 1. `JDBCExecutor` contains the main method, and executes all commands.
+ 1. `JDBCExecutor` contains the main method and executes all commands.
  2. `/util/DataAccessObject` is the DAO interface
  3. `/util/DataTransferObject` is the DTO interface
  4. `DatabaseConnectionManager` handles the connection to the Postgres database using JDBC
@@ -41,19 +41,19 @@ E.g., To search for the word "data" on all files on the /user/app directory and 
  9. `OrderDAO` creates the data access object to the class Order
 
 ### Usage
-The app expects the database connection variables (PGHOST=host adress , PGUSER=username, PGPASSWORD=yourpassword) to be passed as enviromental variables or as arguments on the previous order.
+The app expects the database connection variables (PGHOST=host address, PGUSER=username, PGPASSWORD=yourpassword) to be passed as environmental variables or as arguments on the previous order.
 E.g.,`/jdbc/java JDBCExecutor localhost postgres 1234`
 
-You will be able to call all methods on CustomerDAO and OrderDAO from `JDBCExecutor` , using the main method. You will notece that the main method already contain a few examples.
+You will be able to call all methods on CustomerDAO and OrderDAO from `JDBCExecutor` , using the main method. You will notice that it already contains a few examples.
 
 
  <a name="twitter"></a>
  # Twitter
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzI4OTUyMiwtMzkwOTU5MTI3LC03ND
-U2ODY3MDgsMTQ0NTgyMTY0NywtMTUxMjg5OTM4NiwxMTA5MTE1
-MTE0LC03MDQyMzI0OTcsLTE2NDcyNzc1OTIsLTEyOTI5MTYyMT
-IsODczMTExMDAzLC0xNDI5NTI1NDE2LC0yMDgxMzQ0NDAwLC00
-Njc1Njk5ODksMTg2NzE0MTcyNywtMTY5ODgwMTI1NywyMDQxND
-QyOTY1XX0=
+eyJoaXN0b3J5IjpbLTEzNzUzNTI1NDUsLTM5MDk1OTEyNywtNz
+Q1Njg2NzA4LDE0NDU4MjE2NDcsLTE1MTI4OTkzODYsMTEwOTEx
+NTExNCwtNzA0MjMyNDk3LC0xNjQ3Mjc3NTkyLC0xMjkyOTE2Mj
+EyLDg3MzExMTAwMywtMTQyOTUyNTQxNiwtMjA4MTM0NDQwMCwt
+NDY3NTY5OTg5LDE4NjcxNDE3MjcsLTE2OTg4MDEyNTcsMjA0MT
+Q0Mjk2NV19
 -->
