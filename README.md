@@ -1,8 +1,8 @@
 # Java apps
 This repository contains three java apps.
 - [Java Grep app](#grep) - Implementation of the grep command in java. The app searches for a text pattern recursively in a given directory and outputs all matched lines to a file.
-- JDBC - Example of Java Database Connectivity (JDBC) API usage. This app uses Data Access Object (DAO) to read and manage data from a Postgre database.
-- Twitter - 
+- [JDBC](#jdbc) - Example of Java Database Connectivity (JDBC) API usage. This app uses Data Access Object (DAO) to read and manage data from a Postgre database.
+- [Twitter] (#twitter)- 
 <a name="grep"></a>
 # Java Grep app
 ### Getting Started
@@ -23,7 +23,7 @@ To execute the `JavaGrepApp`, you must pass the parameters below in order:
 E.g., To search for the word "data" on all files on the /user/app directory and output the results to /tmp/grep.out :
  `java JavaGrepApp .\*data.\* /user/app /tmp/grep.out`
  In the end, the app will display a message with all files that it was not able to read.
-
+<a name="jdbc"></a>
  # JDBC 
   ### Getting Started
  Access the README file on `/jdbc_sql_ddl` and follow it to create the hplussport database and necessary tables.
@@ -42,12 +42,12 @@ E.g., To search for the word "data" on all files on the /user/app directory and 
  8. `Order`
  9. `OrderDAO`
 
- 
+ <a name="twitter"></a>
  # Twitter
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NTY4NjcwOCwxNDQ1ODIxNjQ3LC0xNT
-EyODk5Mzg2LDExMDkxMTUxMTQsLTcwNDIzMjQ5NywtMTY0NzI3
-NzU5MiwtMTI5MjkxNjIxMiw4NzMxMTEwMDMsLTE0Mjk1MjU0MT
-YsLTIwODEzNDQ0MDAsLTQ2NzU2OTk4OSwxODY3MTQxNzI3LC0x
-Njk4ODAxMjU3LDIwNDE0NDI5NjVdfQ==
+eyJoaXN0b3J5IjpbMTE0NTg5ODUxNiwtNzQ1Njg2NzA4LDE0ND
+U4MjE2NDcsLTE1MTI4OTkzODYsMTEwOTExNTExNCwtNzA0MjMy
+NDk3LC0xNjQ3Mjc3NTkyLC0xMjkyOTE2MjEyLDg3MzExMTAwMy
+wtMTQyOTUyNTQxNiwtMjA4MTM0NDQwMCwtNDY3NTY5OTg5LDE4
+NjcxNDE3MjcsLTE2OTg4MDEyNTcsMjA0MTQ0Mjk2NV19
 -->
