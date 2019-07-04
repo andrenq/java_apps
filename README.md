@@ -25,13 +25,14 @@ E.g., To search for the word "data" on all files on the /user/app directory and 
  In the end, the app will display a message with all files that it was not able to read.
  # JDBC 
   ### Getting Started
- Access the README file on `/jdbc_sql_ddl` and follow it to create the database and necessary tables.
+ Access the README file on `/jdbc_sql_ddl` and follow it to create the hplussport database and necessary tables.
 ![image](https://drive.google.com/uc?export=view&id=1DvVW11_Hclm7Yhe90woBky0K2UUbrpk3)
   
+  The java program is divided 
  Working PostgreSql database
  # Twitter
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MjAyNDA0MiwtNzA0MjMyNDk3LC0xNj
+eyJoaXN0b3J5IjpbMTEwOTExNTExNCwtNzA0MjMyNDk3LC0xNj
 Q3Mjc3NTkyLC0xMjkyOTE2MjEyLDg3MzExMTAwMywtMTQyOTUy
 NTQxNiwtMjA4MTM0NDQwMCwtNDY3NTY5OTg5LDE4NjcxNDE3Mj
 csLTE2OTg4MDEyNTcsMjA0MTQ0Mjk2NV19
