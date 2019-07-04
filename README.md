@@ -29,15 +29,13 @@ E.g., To search for the word "data" on all files on the /user/app directory and 
  Access the README file on `/jdbc_sql_ddl` and follow it to create the hplussport database and necessary tables.
 ![image](https://drive.google.com/uc?export=view&id=1DvVW11_Hclm7Yhe90woBky0K2UUbrpk3)
   
-  The java program is divided into nine files:
-  
-
+  JDBC java app is divided into nine files:
  1. `JDBCExecutor` contains the main method, and executes all commands.
  2. `/util/DataAccessObject` is the DAO interface
  3. `/util/DataTransferObject` is the DTO interface
  4. `DatabaseConnectionManager` handles the connection to the Postgres database using JDBC
- 5. `Customer`
- 6. `CustomerDAO`
+ 5. `Customer` implements the customer class
+ 6. `CustomerDAO`handles the 
  7. `OrderLine`
  8. `Order`
  9. `OrderDAO`
@@ -45,9 +43,9 @@ E.g., To search for the word "data" on all files on the /user/app directory and 
  <a name="twitter"></a>
  # Twitter
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzODQzMzg4OCwtNzQ1Njg2NzA4LDE0ND
-U4MjE2NDcsLTE1MTI4OTkzODYsMTEwOTExNTExNCwtNzA0MjMy
-NDk3LC0xNjQ3Mjc3NTkyLC0xMjkyOTE2MjEyLDg3MzExMTAwMy
-wtMTQyOTUyNTQxNiwtMjA4MTM0NDQwMCwtNDY3NTY5OTg5LDE4
-NjcxNDE3MjcsLTE2OTg4MDEyNTcsMjA0MTQ0Mjk2NV19
+eyJoaXN0b3J5IjpbMTU0MjIwNDEyLC03NDU2ODY3MDgsMTQ0NT
+gyMTY0NywtMTUxMjg5OTM4NiwxMTA5MTE1MTE0LC03MDQyMzI0
+OTcsLTE2NDcyNzc1OTIsLTEyOTI5MTYyMTIsODczMTExMDAzLC
+0xNDI5NTI1NDE2LC0yMDgxMzQ0NDAwLC00Njc1Njk5ODksMTg2
+NzE0MTcyNywtMTY5ODgwMTI1NywyMDQxNDQyOTY1XX0=
 -->
