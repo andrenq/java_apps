@@ -35,12 +35,16 @@ E.g., To search for the word "data" on all files on the /user/app directory and 
  2. `/util/DataAccessObject` is the DAO interface
  3. `/util/DataTransferObject` is the DTO interface
  4. `DatabaseConnectionManager` handles the connection to the Postgres database using JDBC
- 5. 
+ 5. `Customer`
+ 6. `CustomerDAO`
+ 7. `OrderLine`
+ 8. `Order`
+ 9. `OrderDAO`
 
- Working PostgreSql database
+ 
  # Twitter
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NjQ0NzkyMywtMTUxMjg5OTM4NiwxMT
+eyJoaXN0b3J5IjpbMTQ0NTgyMTY0NywtMTUxMjg5OTM4NiwxMT
 A5MTE1MTE0LC03MDQyMzI0OTcsLTE2NDcyNzc1OTIsLTEyOTI5
 MTYyMTIsODczMTExMDAzLC0xNDI5NTI1NDE2LC0yMDgxMzQ0ND
 AwLC00Njc1Njk5ODksMTg2NzE0MTcyNywtMTY5ODgwMTI1Nywy
