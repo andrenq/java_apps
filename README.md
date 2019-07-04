@@ -26,12 +26,15 @@ E.g., To search for the word "data" on all files on the /user/app directory and 
  # JDBC 
   ### Getting Started
  Access the README file on `/jdbc_sql_ddl` and follow it to create the database and necessary tables.
- 
+ hplussport
+
+![](file:///C:/Users/andre/AppData/Local/Packages/Microsoft.Office.OneNote_8wekyb3d8bbwe/TempState/msohtmlclip/clip_image001.png)
   
  Working PostgreSql database
  # Twitter
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTI5MTYyMTIsODczMTExMDAzLC0xND
-I5NTI1NDE2LC0yMDgxMzQ0NDAwLC00Njc1Njk5ODksMTg2NzE0
-MTcyNywtMTY5ODgwMTI1NywyMDQxNDQyOTY1XX0=
+eyJoaXN0b3J5IjpbMjc2MDI1NDk5LC0xMjkyOTE2MjEyLDg3Mz
+ExMTAwMywtMTQyOTUyNTQxNiwtMjA4MTM0NDQwMCwtNDY3NTY5
+OTg5LDE4NjcxNDE3MjcsLTE2OTg4MDEyNTcsMjA0MTQ0Mjk2NV
+19
 -->
