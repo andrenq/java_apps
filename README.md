@@ -25,11 +25,11 @@ E.g., To search for the word "data" on all files on the /user/app directory and 
  In the end, the app will display a message with all files that it was not able to read.
  # JDBC 
   ### Getting Started
-  
+  Access the README file on /jdbc_sql_ddl and fol
  Working PostgreSql database
  # Twitter
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODczMTExMDAzLC0xNDI5NTI1NDE2LC0yMD
-gxMzQ0NDAwLC00Njc1Njk5ODksMTg2NzE0MTcyNywtMTY5ODgw
-MTI1NywyMDQxNDQyOTY1XX0=
+eyJoaXN0b3J5IjpbLTEwNjk2ODc3ODMsODczMTExMDAzLC0xND
+I5NTI1NDE2LC0yMDgxMzQ0NDAwLC00Njc1Njk5ODksMTg2NzE0
+MTcyNywtMTY5ODgwMTI1NywyMDQxNDQyOTY1XX0=
 -->
