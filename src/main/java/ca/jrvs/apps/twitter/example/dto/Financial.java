@@ -12,6 +12,19 @@ public class Financial {
     BigInteger operationIncome;
     BigInteger netIncome;
 
+    @Override
+    public String toString() {
+        return "Financial{" +
+                "reportDate=" + reportDate +
+                ", grossProfit=" + grossProfit +
+                ", costRevenue=" + costRevenue +
+                ", operatingRevenue=" + operatingRevenue +
+                ", totalRevenue=" + totalRevenue +
+                ", operationIncome=" + operationIncome +
+                ", netIncome=" + netIncome +
+                '}';
+    }
+
     public Date getReportDate() {
         return reportDate;
     }

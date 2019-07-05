@@ -9,6 +9,20 @@ public class Dividend {
   private Date declareDate;
   private BigDecimal amount;
 
+  @Override
+  public String toString() {
+    return "Dividend{"
+        + "exDate="
+        + exDate
+        + ", paymentDate="
+        + paymentDate
+        + ", declareDate="
+        + declareDate
+        + ", amount="
+        + amount
+        + "}";
+  }
+
   public void setExDate(Date exDate) {
     this.exDate = exDate;
   }
