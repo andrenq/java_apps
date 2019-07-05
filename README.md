@@ -27,7 +27,7 @@ E.g., To search for the word "data" on all files on the /user/app directory and 
  # JDBC 
   ### Getting Started
  Access the README file on `/jdbc_sql_ddl` and follow it to create the hplussport database and necessary tables.
-![image](https://drive.google.com/uc?export=view&id=1DvVW11_Hclm7Yhe90woBky0K2UUbrpk3)
+![image](https://drive.google.com/uc?export=view&id=1AwyghOuU2UBMr6_ysmbk2eKSufjbwx6_)
   
   JDBC java app is divided into nine files:
  1. `JDBCExecutor` contains the main method and executes all commands.
@@ -50,10 +50,10 @@ You will be able to call all methods on CustomerDAO and OrderDAO from `JDBCExecu
  <a name="twitter"></a>
  # Twitter
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzUzNTI1NDUsLTM5MDk1OTEyNywtNz
-Q1Njg2NzA4LDE0NDU4MjE2NDcsLTE1MTI4OTkzODYsMTEwOTEx
-NTExNCwtNzA0MjMyNDk3LC0xNjQ3Mjc3NTkyLC0xMjkyOTE2Mj
-EyLDg3MzExMTAwMywtMTQyOTUyNTQxNiwtMjA4MTM0NDQwMCwt
-NDY3NTY5OTg5LDE4NjcxNDE3MjcsLTE2OTg4MDEyNTcsMjA0MT
-Q0Mjk2NV19
+eyJoaXN0b3J5IjpbMTkxNzM5OTM4OCwtMTM3NTM1MjU0NSwtMz
+kwOTU5MTI3LC03NDU2ODY3MDgsMTQ0NTgyMTY0NywtMTUxMjg5
+OTM4NiwxMTA5MTE1MTE0LC03MDQyMzI0OTcsLTE2NDcyNzc1OT
+IsLTEyOTI5MTYyMTIsODczMTExMDAzLC0xNDI5NTI1NDE2LC0y
+MDgxMzQ0NDAwLC00Njc1Njk5ODksMTg2NzE0MTcyNywtMTY5OD
+gwMTI1NywyMDQxNDQyOTY1XX0=
 -->
