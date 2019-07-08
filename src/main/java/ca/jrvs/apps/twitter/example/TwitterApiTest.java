@@ -4,7 +4,6 @@ import oauth.signpost.commonshttp.CommonsHttpOAuthConsumer;
 
 import java.util.Arrays;
 import oauth.signpost.OAuthConsumer;
-import oauth.signpost.commonshttp.CommonsHttpOAuthConsumer;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
