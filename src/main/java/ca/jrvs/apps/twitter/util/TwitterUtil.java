@@ -32,22 +32,24 @@ public class TwitterUtil {
       throw new IllegalArgumentException("Invalid Latitude");
     }
     if ((longitude < MIN_LON) || longitude > MAX_LON) {
-      throw new IllegalArgumentException("Invalid location format: Longitude\n" +
-              "USAGE: TwitterCLIApp post \"tweet_text\" \"latitude:longitude\"");
+      throw new IllegalArgumentException(
+          "Invalid location format: Longitude\n"
+              + "USAGE: TwitterCLIApp post \"tweet_text\" \"latitude:longitude\"");
     }
     if (status.isEmpty() || status.length() > MAX_TWEET_CHAR) {
-      throw new IllegalArgumentException("Invalid location format: Latitude\n" +
-              "USAGE: TwitterCLIApp post \"tweet_text\" \"latitude:longitude\"");
+      throw new IllegalArgumentException(
+          "Invalid location format: Latitude\n"
+              + "USAGE: TwitterCLIApp post \"tweet_text\" \"latitude:longitude\"");
     }
   }
 
-  public static Tweet createTweet(String status, Double latitude, Double longitude){
-      Tweet tweet = new Tweet();
-      tweet.setText(status);
-      Coordinates coordinates = new Coordinates();
-      coordinates.setCoordinates(Arrays.asList(latitude,longitude));
-      tweet.setCoordinates(coordinates);
-      validatePostTweet(tweet);
-      return tweet;
+  public static Tweet createTweet(String status, Double latitude, Double longitude) {
+    Tweet tweet = new Tweet();
+    tweet.setText(status);
+    Coordinates coordinates = new Coordinates();
+    coordinates.setCoordinates(Arrays.asList(latitude, longitude));
+    tweet.setCoordinates(coordinates);
+    validatePostTweet(tweet);
+    return tweet;
   }
 }

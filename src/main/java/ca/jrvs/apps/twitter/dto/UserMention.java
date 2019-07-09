@@ -1,4 +1,3 @@
-
 package ca.jrvs.apps.twitter.dto;
 
 import java.util.List;
@@ -7,110 +6,115 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonPropertyOrder({
-        "screen_name",
-        "name",
-        "id",
-        "id_str",
-        "indices"
-})
+@JsonPropertyOrder({"screen_name", "name", "id", "id_str", "indices"})
 public class UserMention {
 
-    @JsonProperty("screen_name")
-    private String screenName;
-    @JsonProperty("name")
-    private String name;
-    @JsonProperty("id")
-    private Integer id;
-    @JsonProperty("id_str")
-    private String idStr;
-    @JsonProperty("indices")
-    private List<Integer> indices = null;
+  @JsonProperty("screen_name")
+  private String screenName;
 
-    @JsonProperty("screen_name")
-    public String getScreenName() {
-        return screenName;
-    }
+  @JsonProperty("name")
+  private String name;
 
-    @JsonProperty("screen_name")
-    public void setScreenName(String screenName) {
-        this.screenName = screenName;
-    }
+  @JsonProperty("id")
+  private Integer id;
 
-    public UserMention withScreenName(String screenName) {
-        this.screenName = screenName;
-        return this;
-    }
+  @JsonProperty("id_str")
+  private String idStr;
 
-    @JsonProperty("name")
-    public String getName() {
-        return name;
-    }
+  @JsonProperty("indices")
+  private List<Integer> indices = null;
 
-    @JsonProperty("name")
-    public void setName(String name) {
-        this.name = name;
-    }
+  @JsonProperty("screen_name")
+  public String getScreenName() {
+    return screenName;
+  }
 
-    public UserMention withName(String name) {
-        this.name = name;
-        return this;
-    }
+  @JsonProperty("screen_name")
+  public void setScreenName(String screenName) {
+    this.screenName = screenName;
+  }
 
-    @JsonProperty("id")
-    public Integer getId() {
-        return id;
-    }
+  public UserMention withScreenName(String screenName) {
+    this.screenName = screenName;
+    return this;
+  }
 
-    @JsonProperty("id")
-    public void setId(Integer id) {
-        this.id = id;
-    }
+  @JsonProperty("name")
+  public String getName() {
+    return name;
+  }
 
-    public UserMention withId(Integer id) {
-        this.id = id;
-        return this;
-    }
+  @JsonProperty("name")
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    @JsonProperty("id_str")
-    public String getIdStr() {
-        return idStr;
-    }
+  public UserMention withName(String name) {
+    this.name = name;
+    return this;
+  }
 
-    @JsonProperty("id_str")
-    public void setIdStr(String idStr) {
-        this.idStr = idStr;
-    }
+  @JsonProperty("id")
+  public Integer getId() {
+    return id;
+  }
 
-    public UserMention withIdStr(String idStr) {
-        this.idStr = idStr;
-        return this;
-    }
+  @JsonProperty("id")
+  public void setId(Integer id) {
+    this.id = id;
+  }
 
-    @JsonProperty("indices")
-    public List<Integer> getIndices() {
-        return indices;
-    }
+  public UserMention withId(Integer id) {
+    this.id = id;
+    return this;
+  }
 
-    @JsonProperty("indices")
-    public void setIndices(List<Integer> indices) {
-        this.indices = indices;
-    }
+  @JsonProperty("id_str")
+  public String getIdStr() {
+    return idStr;
+  }
 
-    public UserMention withIndices(List<Integer> indices) {
-        this.indices = indices;
-        return this;
-    }
+  @JsonProperty("id_str")
+  public void setIdStr(String idStr) {
+    this.idStr = idStr;
+  }
 
-    @Override
-    public String toString() {
-        return "UserMention{" +
-                "screenName='" + screenName + '\'' +
-                ", name='" + name + '\'' +
-                ", id=" + id +
-                ", idStr='" + idStr + '\'' +
-                ", indices=" + indices +
-                '}';
-    }
+  public UserMention withIdStr(String idStr) {
+    this.idStr = idStr;
+    return this;
+  }
+
+  @JsonProperty("indices")
+  public List<Integer> getIndices() {
+    return indices;
+  }
+
+  @JsonProperty("indices")
+  public void setIndices(List<Integer> indices) {
+    this.indices = indices;
+  }
+
+  public UserMention withIndices(List<Integer> indices) {
+    this.indices = indices;
+    return this;
+  }
+
+  @Override
+  public String toString() {
+    return "UserMention{"
+        + "screenName='"
+        + screenName
+        + '\''
+        + ", name='"
+        + name
+        + '\''
+        + ", id="
+        + id
+        + ", idStr='"
+        + idStr
+        + '\''
+        + ", indices="
+        + indices
+        + '}';
+  }
 }
-

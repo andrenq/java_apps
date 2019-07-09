@@ -6,34 +6,42 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 import java.util.ArrayList;
 import java.util.List;
+
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "symbol",
-        "companyName",
-        "exchange",
-        "description",
-        "CEO",
-        "sector",
-        "financials",
-        "dividends"
+  "symbol",
+  "companyName",
+  "exchange",
+  "description",
+  "CEO",
+  "sector",
+  "financials",
+  "dividends"
 })
 public class Company {
   @JsonProperty("symbol")
   private String symbol;
+
   @JsonProperty("companyName")
   private String companyName;
+
   @JsonProperty("exchange")
   private String exchange;
+
   @JsonProperty("description")
   private String description;
+
   @JsonProperty("CEO")
   private String cEO;
+
   @JsonProperty("sector")
   private String sector;
+
   @JsonProperty("financials")
-  private List<Object> financial = new ArrayList <Object>();
+  private List<Object> financial = new ArrayList<Object>();
+
   @JsonProperty("dividends")
-  private List<Object>  dividends = new ArrayList <Object> ();
+  private List<Object> dividends = new ArrayList<Object>();
 
   @Override
   public String toString() {
@@ -49,13 +57,16 @@ public class Company {
         + "\n\tCEO:\t\t\t"
         + cEO
         + "\n\tsector:\t\t\t"
-        + sector+"\n"
+        + sector
+        + "\n"
         + "[Finantials: \n"
-            +financial+"\n"
-            +"]"
-            +"[Dividends:" +
-            dividends+"\n" +
-            "]";
+        + financial
+        + "\n"
+        + "]"
+        + "[Dividends:"
+        + dividends
+        + "\n"
+        + "]";
   }
 
   @JsonProperty("symbol")
@@ -107,6 +118,7 @@ public class Company {
   public String getCompanyName() {
     return companyName;
   }
+
   @JsonProperty("exchange")
   public String getExchange() {
     return exchange;
@@ -116,14 +128,17 @@ public class Company {
   public String getDescription() {
     return description;
   }
+
   @JsonProperty("CEO")
   public String getCEO() {
     return cEO;
   }
+
   @JsonProperty("sector")
   public String getSector() {
     return sector;
   }
+
   @JsonProperty("financial")
   public List<Object> getFinancial() {
     return financial;
@@ -133,6 +148,4 @@ public class Company {
   public List<Object> getDividends() {
     return dividends;
   }
-
-
 }

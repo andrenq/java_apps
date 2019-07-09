@@ -2,15 +2,12 @@ package ca.jrvs.apps.twitter;
 
 import ca.jrvs.apps.twitter.service.TwitterService;
 
-
-
 public class TwitterCLIRunner {
   private TwitterService twitterService;
 
   public TwitterCLIRunner(TwitterService service) {
     this.twitterService = service;
   }
-
 
   public void postTweet(String[] args) {
     if (args.length != 3) {
@@ -33,22 +30,20 @@ public class TwitterCLIRunner {
     twitterService.postTweet(status, latitude, longitude);
   }
 
-  public void showTweet(String[] args){
-    if (args.length<2){
+  public void showTweet(String[] args) {
+    if (args.length < 2) {
       throw new RuntimeException("USAGE: TwitterCLIApp show tweet_id [fields]");
     }
-    try{
+    try {
       String tweet_id = args[1];
-      twitterService.showTweet(tweet_id,null);
-    }catch (Exception e){
-      throw new RuntimeException(
-              "USAGE: TwitterCLIApp show tweet_id\n"+e);
+      twitterService.showTweet(tweet_id, null);
+    } catch (Exception e) {
+      throw new RuntimeException("USAGE: TwitterCLIApp show tweet_id\n" + e);
     }
-
   }
 
   protected void deleteTweet(String[] args) {
-/*    if (args.length != 2 || args[1].isEmpty()) {
+    /*    if (args.length != 2 || args[1].isEmpty()) {
       throw new RuntimeException("USAGE: TwitterCLIApp deleteTweets tweet_ids");
     }*/
 
@@ -57,7 +52,7 @@ public class TwitterCLIRunner {
     twitterService.deleteTweets(ids);
   }
 
-  public void run(String[] args){
+  public void run(String[] args) {
     if (args.length < 2) {
       throw new RuntimeException("USAGE: TwitterCLIApp post|show|deleteTweets args");
     }
@@ -76,5 +71,4 @@ public class TwitterCLIRunner {
         break;
     }
   }
-
 }

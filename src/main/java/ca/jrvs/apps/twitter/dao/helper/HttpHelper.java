@@ -10,7 +10,15 @@ import java.io.IOException;
 import java.net.URI;
 
 public interface HttpHelper {
-    HttpResponse httpPost(URI uri) throws OAuthCommunicationException, OAuthExpectationFailedException, OAuthMessageSignerException, IOException;
-    HttpResponse httpPost(URI uri, StringEntity stringEntity) throws OAuthCommunicationException, OAuthExpectationFailedException, OAuthMessageSignerException, IOException;
-    HttpResponse httpGet(URI uri) throws OAuthExpectationFailedException, OAuthCommunicationException, OAuthMessageSignerException, IOException;
+  HttpResponse httpPost(URI uri)
+      throws OAuthCommunicationException, OAuthExpectationFailedException,
+          OAuthMessageSignerException, IOException;
+
+  HttpResponse httpPost(URI uri, StringEntity stringEntity)
+      throws OAuthCommunicationException, OAuthExpectationFailedException,
+          OAuthMessageSignerException, IOException;
+
+  HttpResponse httpGet(URI uri)
+      throws OAuthExpectationFailedException, OAuthCommunicationException,
+          OAuthMessageSignerException, IOException;
 }

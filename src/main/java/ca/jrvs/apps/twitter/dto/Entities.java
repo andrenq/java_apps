@@ -1,4 +1,3 @@
-
 package ca.jrvs.apps.twitter.dto;
 
 import java.util.List;
@@ -7,109 +6,112 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonPropertyOrder({
-        "hashtags",
-        "symbols",
-        "user_mentions",
-        "urls",
-        "media"
-})
+@JsonPropertyOrder({"hashtags", "symbols", "user_mentions", "urls", "media"})
 public class Entities {
 
-    @JsonProperty("hashtags")
-    private List<Hashtag> hashtags = null;
-    @JsonProperty("symbols")
-    private List<Object> symbols = null;
-    @JsonProperty("user_mentions")
-    private List<UserMention> userMentions = null;
-    @JsonProperty("urls")
-    private List<Object> urls = null;
-    @JsonProperty("media")
-    private List<Medium> media = null;
+  @JsonProperty("hashtags")
+  private List<Hashtag> hashtags = null;
 
-    @JsonProperty("hashtags")
-    public List<Hashtag> getHashtags() {
-        return hashtags;
-    }
+  @JsonProperty("symbols")
+  private List<Object> symbols = null;
 
-    @JsonProperty("hashtags")
-    public void setHashtags(List<Hashtag> hashtags) {
-        this.hashtags = hashtags;
-    }
+  @JsonProperty("user_mentions")
+  private List<UserMention> userMentions = null;
 
-    public Entities withHashtags(List<Hashtag> hashtags) {
-        this.hashtags = hashtags;
-        return this;
-    }
+  @JsonProperty("urls")
+  private List<Object> urls = null;
 
-    @JsonProperty("symbols")
-    public List<Object> getSymbols() {
-        return symbols;
-    }
+  @JsonProperty("media")
+  private List<Medium> media = null;
 
-    @JsonProperty("symbols")
-    public void setSymbols(List<Object> symbols) {
-        this.symbols = symbols;
-    }
+  @JsonProperty("hashtags")
+  public List<Hashtag> getHashtags() {
+    return hashtags;
+  }
 
-    public Entities withSymbols(List<Object> symbols) {
-        this.symbols = symbols;
-        return this;
-    }
+  @JsonProperty("hashtags")
+  public void setHashtags(List<Hashtag> hashtags) {
+    this.hashtags = hashtags;
+  }
 
-    @JsonProperty("user_mentions")
-    public List<UserMention> getUserMentions() {
-        return userMentions;
-    }
+  public Entities withHashtags(List<Hashtag> hashtags) {
+    this.hashtags = hashtags;
+    return this;
+  }
 
-    @JsonProperty("user_mentions")
-    public void setUserMentions(List<UserMention> userMentions) {
-        this.userMentions = userMentions;
-    }
+  @JsonProperty("symbols")
+  public List<Object> getSymbols() {
+    return symbols;
+  }
 
-    public Entities withUserMentions(List<UserMention> userMentions) {
-        this.userMentions = userMentions;
-        return this;
-    }
+  @JsonProperty("symbols")
+  public void setSymbols(List<Object> symbols) {
+    this.symbols = symbols;
+  }
 
-    @JsonProperty("urls")
-    public List<Object> getUrls() {
-        return urls;
-    }
+  public Entities withSymbols(List<Object> symbols) {
+    this.symbols = symbols;
+    return this;
+  }
 
-    @JsonProperty("urls")
-    public void setUrls(List<Object> urls) {
-        this.urls = urls;
-    }
+  @JsonProperty("user_mentions")
+  public List<UserMention> getUserMentions() {
+    return userMentions;
+  }
 
-    public Entities withUrls(List<Object> urls) {
-        this.urls = urls;
-        return this;
-    }
+  @JsonProperty("user_mentions")
+  public void setUserMentions(List<UserMention> userMentions) {
+    this.userMentions = userMentions;
+  }
 
-    @JsonProperty("media")
-    public List<Medium> getMedia() {
-        return media;
-    }
+  public Entities withUserMentions(List<UserMention> userMentions) {
+    this.userMentions = userMentions;
+    return this;
+  }
 
-    @JsonProperty("media")
-    public void setMedia(List<Medium> media) {
-        this.media = media;
-    }
+  @JsonProperty("urls")
+  public List<Object> getUrls() {
+    return urls;
+  }
 
-    public Entities withMedia(List<Medium> media) {
-        this.media = media;
-        return this;
-    }
+  @JsonProperty("urls")
+  public void setUrls(List<Object> urls) {
+    this.urls = urls;
+  }
 
-    @Override
-    public String toString() {
-        return "Entities{" +
-                "hashtags=" + hashtags +
-                ", symbols=" + symbols +
-                ", userMentions=" + userMentions +
-                ", urls=" + urls +
-                ", media=" + media +
-                '}';
-    }
+  public Entities withUrls(List<Object> urls) {
+    this.urls = urls;
+    return this;
+  }
+
+  @JsonProperty("media")
+  public List<Medium> getMedia() {
+    return media;
+  }
+
+  @JsonProperty("media")
+  public void setMedia(List<Medium> media) {
+    this.media = media;
+  }
+
+  public Entities withMedia(List<Medium> media) {
+    this.media = media;
+    return this;
+  }
+
+  @Override
+  public String toString() {
+    return "Entities{"
+        + "hashtags="
+        + hashtags
+        + ", symbols="
+        + symbols
+        + ", userMentions="
+        + userMentions
+        + ", urls="
+        + urls
+        + ", media="
+        + media
+        + '}';
+  }
 }
