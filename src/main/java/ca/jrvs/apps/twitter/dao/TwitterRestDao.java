@@ -21,7 +21,11 @@ public class TwitterRestDao implements CrdRepository<Tweet, String> {
   //Response code
   private static final int HTTP_OK = 200;
 
-  private HttpHelper httpHelper = new ApacheHttpHelper();
+  private HttpHelper httpHelper;
+
+  public TwitterRestDao(HttpHelper httpHelper) {
+    this.httpHelper = httpHelper;
+  }
 
   @Override
   public Tweet create(Tweet entity)
@@ -32,7 +36,12 @@ public class TwitterRestDao implements CrdRepository<Tweet, String> {
     String longitude = "long=" + entity.getCoordinates().getCoordinates().get(1);
     String postUrl = saveURL + status + AMPERSAND + latitude + AMPERSAND + longitude;
     HttpResponse response = httpHelper.httpPost(URI.create(postUrl));
-    System.out.println(response.toString());
+    System.out.println("Created tweet:");
+    if(response.getStatusLine().getStatusCode()>HTTP_OK+99){
+      System.out.println("Could not create tweet:\n" +
+              response.getStatusLine());
+      throw new RuntimeException();
+    }
     return toObjectFromJson(EntityUtils.toString(response.getEntity()), Tweet.class);
   }
 
@@ -41,6 +50,10 @@ public class TwitterRestDao implements CrdRepository<Tweet, String> {
       throws OAuthExpectationFailedException, OAuthCommunicationException,
           OAuthMessageSignerException, IOException {
     HttpResponse response = httpHelper.httpGet(URI.create(findURL + s));
+    if(response.getStatusLine().getStatusCode()>HTTP_OK+99){
+      throw new RuntimeException("Could not find tweet:\n" +
+              response.getStatusLine());
+    }
     return toObjectFromJson(EntityUtils.toString(response.getEntity()), Tweet.class);
   }
 

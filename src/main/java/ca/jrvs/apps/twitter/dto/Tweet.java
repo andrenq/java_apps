@@ -162,17 +162,16 @@ public class Tweet {
 
     @Override
     public String toString() {
-        return "Tweet{" +
-                "createdAt='" + createdAt + '\'' +
-                ", id=" + id +
-                ", idStr='" + idStr + '\'' +
-                ", text='" + text + '\'' +
-                ", entities=" + entities +
-                ", coordinates=" + coordinates +
-                ", retweetCount=" + retweetCount +
-                ", favoriteCount=" + favoriteCount +
-                ", favorited=" + favorited +
-                ", retweeted=" + retweeted +
-                '}';
+        return "Tweet:\n" +
+                "\tcreatedAt:\t\t'" + createdAt + '\'' +"\n"+
+                "\tid:\t\t\t\t" + id +"\n"+
+                "\tidStr:\t\t\t'" + idStr + '\'' +"\n"+
+                "\ttext:\t\t\t'" + text + '\'' +"\n"+
+                "\tretweeted:\t\t" + retweeted+"\n"+
+                "\tcoordinates:\t" + coordinates+"\n" +
+                "\tretweetCount:\t" + retweetCount+"\n" +
+                "\tfavoriteCount:\t" + favoriteCount +"\n"+
+                "\tfavorited:\t\t" + favorited+"\n" +
+                "\tentities:\t\t" + entities +"\n";
     }
 }
