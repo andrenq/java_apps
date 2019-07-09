@@ -52,7 +52,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class User {
 
     @JsonProperty("id")
-    private Integer id;
+    private String id;
     @JsonProperty("id_str")
     private String idStr;
     @JsonProperty("name")
@@ -135,19 +135,16 @@ public class User {
     private String translatorType;
 
     @JsonProperty("id")
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
     @JsonProperty("id")
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public User withId(Integer id) {
-        this.id = id;
-        return this;
-    }
+
 
     @JsonProperty("id_str")
     public String getIdStr() {

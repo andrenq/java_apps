@@ -18,21 +18,6 @@ public class Coordinates {
     @JsonProperty("coordinates")
     private List<Double> coordinates = null;
 
-    @JsonProperty("type")
-    public String getType() {
-        return type;
-    }
-
-    @JsonProperty("type")
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public Coordinates withType(String type) {
-        this.type = type;
-        return this;
-    }
-
     @JsonProperty("coordinates")
     public List<Double> getCoordinates() {
         return coordinates;
@@ -43,9 +28,21 @@ public class Coordinates {
         this.coordinates = coordinates;
     }
 
-    public Coordinates withCoordinates(List<Double> coordinates) {
-        this.coordinates = coordinates;
-        return this;
+    @JsonProperty("type")
+    public String getType() {
+        return type;
     }
 
+    @JsonProperty("type")
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    @Override
+    public String toString() {
+        return "Coordinates{" +
+                "type='" + type + '\'' +
+                ", coordinates=" + coordinates +
+                '}';
+    }
 }

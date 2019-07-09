@@ -48,4 +48,11 @@ public class Hashtag {
         return this;
     }
 
+    @Override
+    public String toString() {
+        return "Hashtag{" +
+                "text='" + text + '\'' +
+                ", indices=" + indices +
+                '}';
+    }
 }

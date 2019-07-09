@@ -102,4 +102,14 @@ public class Entities {
         return this;
     }
 
+    @Override
+    public String toString() {
+        return "Entities{" +
+                "hashtags=" + hashtags +
+                ", symbols=" + symbols +
+                ", userMentions=" + userMentions +
+                ", urls=" + urls +
+                ", media=" + media +
+                '}';
+    }
 }

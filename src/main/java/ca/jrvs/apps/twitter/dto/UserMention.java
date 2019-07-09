@@ -102,5 +102,15 @@ public class UserMention {
         return this;
     }
 
+    @Override
+    public String toString() {
+        return "UserMention{" +
+                "screenName='" + screenName + '\'' +
+                ", name='" + name + '\'' +
+                ", id=" + id +
+                ", idStr='" + idStr + '\'' +
+                ", indices=" + indices +
+                '}';
+    }
 }
 
