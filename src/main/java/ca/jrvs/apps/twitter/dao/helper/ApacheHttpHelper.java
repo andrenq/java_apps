@@ -10,22 +10,21 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
-import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 
 import java.io.IOException;
 import java.net.URI;
 
 public class ApacheHttpHelper implements HttpHelper {
-  private static String CONSUMER_KEY = System.getenv("consumerKey");
-  private static String CONSUMER_SECRET = System.getenv("consumerSecret");
-  private static String ACCESS_TOKEN = System.getenv("accessToken");
-  private static String TOKEN_SECRET = System.getenv("tokenSecret");
+    static final String CONSUMER_KEY = System.getenv("consumerKey");
+    static final String CONSUMER_SECRET = System.getenv("consumerSecret");
+    static final String ACCESS_TOKEN = System.getenv("accessToken");
+    static final String TOKEN_SECRET = System.getenv("tokenSecret");
 
-  OAuthConsumer consumer;
-  HttpClient httpClient;
+    private HttpClient httpClient = HttpClientBuilder.create().build();
 
   private OAuthConsumer oAuthConsumer() {
-    consumer = new CommonsHttpOAuthConsumer(CONSUMER_KEY, CONSUMER_SECRET);
+      OAuthConsumer consumer = new CommonsHttpOAuthConsumer(CONSUMER_KEY, CONSUMER_SECRET);
     consumer.setTokenWithSecret(ACCESS_TOKEN, TOKEN_SECRET);
     return consumer;
   }
@@ -39,9 +38,7 @@ public class ApacheHttpHelper implements HttpHelper {
       request.setEntity(stringEntity);
     }
     oAuthConsumer().sign(request);
-    httpClient = new DefaultHttpClient();
-    HttpResponse response = httpClient.execute(request);
-    return response;
+      return httpClient.execute(request);
   }
 
   @Override
@@ -50,9 +47,7 @@ public class ApacheHttpHelper implements HttpHelper {
           OAuthCommunicationException {
     HttpPost request = new HttpPost(uri);
     oAuthConsumer().sign(request);
-    httpClient = new DefaultHttpClient();
-    HttpResponse response = httpClient.execute(request);
-    return response;
+      return httpClient.execute(request);
   }
 
   @Override
@@ -61,8 +56,6 @@ public class ApacheHttpHelper implements HttpHelper {
           OAuthMessageSignerException, IOException {
     HttpGet request = new HttpGet(uri);
     oAuthConsumer().sign(request);
-    httpClient = new DefaultHttpClient();
-    HttpResponse response = httpClient.execute(request);
-    return response;
+      return httpClient.execute(request);
   }
 }

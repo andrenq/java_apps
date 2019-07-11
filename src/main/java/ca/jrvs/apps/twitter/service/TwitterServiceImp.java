@@ -21,7 +21,7 @@ public class TwitterServiceImp implements TwitterService {
       Tweet responseTweet = (Tweet) dao.create(postTweet);
       System.out.println(responseTweet);
     } catch (Exception e) {
-      throw new RuntimeException("Failed to post tweet");
+      throw new RuntimeException(e);
     }
     return postTweet;
   }
@@ -33,7 +33,7 @@ public class TwitterServiceImp implements TwitterService {
       Tweet responseTweet = (Tweet) dao.findById(id);
       System.out.println(responseTweet);
     } catch (Exception e) {
-      throw new RuntimeException("Failed to retrieve tweet\n" + e);
+      throw new RuntimeException(e);
     }
   }
 
@@ -43,7 +43,7 @@ public class TwitterServiceImp implements TwitterService {
     for (String id : ids) {
       try {
         validateID(id);
-        Tweet responseTweet = (Tweet) dao.deleById(id);
+        Tweet responseTweet = (Tweet) dao.deleteById(id);
         if (!responseTweet.getId().toString().isEmpty()) {
           System.out.println(responseTweet);
         }

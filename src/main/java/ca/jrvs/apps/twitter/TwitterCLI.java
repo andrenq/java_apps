@@ -17,16 +17,7 @@ public class TwitterCLI {
     // Create Runner
     TwitterCLIRunner runner = new TwitterCLIRunner(service);
 
-    String text = ("Last deleted IDs 1148671689263386633,1148671177977552896");
-    double latitude = -20.53861;
-    double longitude = -47.400829;
-    String coord = latitude + ":" + longitude;
-    String[] args2 = new String[3];
-    args2[0] = "post";
-    args2[1] = text;
-    args2[2] = coord;
-
     // Run Application
-    runner.run(args2);
+    runner.run(args);
   }
 }

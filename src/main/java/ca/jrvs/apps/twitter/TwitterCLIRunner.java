@@ -2,14 +2,14 @@ package ca.jrvs.apps.twitter;
 
 import ca.jrvs.apps.twitter.service.TwitterService;
 
-public class TwitterCLIRunner {
+class TwitterCLIRunner {
   private TwitterService twitterService;
 
-  public TwitterCLIRunner(TwitterService service) {
+  TwitterCLIRunner(TwitterService service) {
     this.twitterService = service;
   }
 
-  public void postTweet(String[] args) {
+  private void postTweet(String[] args) {
     if (args.length != 3) {
       throw new RuntimeException(
           "Missing arguments:\nUSAGE: TwitterCLIApp post \"tweet_text\" \"latitude:longitude\"");
@@ -17,8 +17,8 @@ public class TwitterCLIRunner {
     String status = args[1];
     String coord = args[2];
     String[] coordArray = coord.split(":");
-    Double latitude = null;
-    Double longitude = null;
+    Double latitude;
+    Double longitude;
     try {
       latitude = Double.parseDouble(coordArray[0]);
       longitude = Double.parseDouble(coordArray[1]);
@@ -30,7 +30,7 @@ public class TwitterCLIRunner {
     twitterService.postTweet(status, latitude, longitude);
   }
 
-  public void showTweet(String[] args) {
+  private void showTweet(String[] args) {
     if (args.length < 2) {
       throw new RuntimeException("USAGE: TwitterCLIApp show tweet_id [fields]");
     }
@@ -42,7 +42,7 @@ public class TwitterCLIRunner {
     }
   }
 
-  protected void deleteTweet(String[] args) {
+  private void deleteTweet(String[] args) {
     /*    if (args.length != 2 || args[1].isEmpty()) {
       throw new RuntimeException("USAGE: TwitterCLIApp deleteTweets tweet_ids");
     }*/
@@ -52,7 +52,7 @@ public class TwitterCLIRunner {
     twitterService.deleteTweets(ids);
   }
 
-  public void run(String[] args) {
+  void run(String[] args) {
     if (args.length < 2) {
       throw new RuntimeException("USAGE: TwitterCLIApp post|show|deleteTweets args");
     }

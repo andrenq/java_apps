@@ -1,21 +1,16 @@
 package ca.jrvs.apps.twitter.dao;
 
 import oauth.signpost.exception.OAuthCommunicationException;
+import oauth.signpost.exception.OAuthException;
 import oauth.signpost.exception.OAuthExpectationFailedException;
 import oauth.signpost.exception.OAuthMessageSignerException;
 
 import java.io.IOException;
 
 public interface CrdRepository<T, ID> {
-  T create(T entity)
-      throws IOException, OAuthCommunicationException, OAuthExpectationFailedException,
-          OAuthMessageSignerException;
+    T create(T entity) throws IOException, OAuthException;
 
-  T findById(ID id)
-      throws OAuthExpectationFailedException, OAuthCommunicationException,
-          OAuthMessageSignerException, IOException;
+    T findById(ID id) throws IOException, OAuthException;
 
-  T deleById(ID id)
-      throws OAuthExpectationFailedException, OAuthCommunicationException,
-          OAuthMessageSignerException, IOException;
+    T deleteById(ID id) throws IOException, OAuthException;
 }
