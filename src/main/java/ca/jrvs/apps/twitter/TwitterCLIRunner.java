@@ -1,6 +1,8 @@
 package ca.jrvs.apps.twitter;
 
+import ca.jrvs.apps.twitter.dto.Tweet;
 import ca.jrvs.apps.twitter.service.TwitterService;
+
 
 class TwitterCLIRunner {
   private TwitterService twitterService;
@@ -34,22 +36,23 @@ class TwitterCLIRunner {
     if (args.length < 2) {
       throw new RuntimeException("USAGE: TwitterCLIApp show tweet_id [fields]");
     }
-    try {
-      String tweet_id = args[1];
-      twitterService.showTweet(tweet_id, null);
-    } catch (Exception e) {
-      throw new RuntimeException("USAGE: TwitterCLIApp show tweet_id\n" + e);
-    }
+      Tweet tweet = twitterService.showTweet(args[1], null);
+      if (!(tweet.getIdStr() == null)) {
+          System.out.println(tweet);
+      } else {
+          System.out.println("Could not find id:" + args[1]);
+      }
   }
 
   private void deleteTweet(String[] args) {
     /*    if (args.length != 2 || args[1].isEmpty()) {
       throw new RuntimeException("USAGE: TwitterCLIApp deleteTweets tweet_ids");
     }*/
-
     String tweetIds = args[1];
     String[] ids = tweetIds.split(",");
-    twitterService.deleteTweets(ids);
+      for (Tweet t : twitterService.deleteTweets(ids)) {
+          System.out.println(t);
+      }
   }
 
   void run(String[] args) {

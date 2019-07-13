@@ -2,9 +2,7 @@ package ca.jrvs.apps.twitter.dao.helper;
 
 import oauth.signpost.OAuthConsumer;
 import oauth.signpost.commonshttp.CommonsHttpOAuthConsumer;
-import oauth.signpost.exception.OAuthCommunicationException;
-import oauth.signpost.exception.OAuthExpectationFailedException;
-import oauth.signpost.exception.OAuthMessageSignerException;
+import oauth.signpost.exception.OAuthException;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
@@ -31,8 +29,7 @@ public class ApacheHttpHelper implements HttpHelper {
 
   @Override
   public HttpResponse httpPost(URI uri, StringEntity stringEntity)
-      throws OAuthCommunicationException, OAuthExpectationFailedException,
-          OAuthMessageSignerException, IOException {
+          throws OAuthException, IOException {
     HttpPost request = new HttpPost(uri);
     if (stringEntity != null) {
       request.setEntity(stringEntity);
@@ -43,8 +40,7 @@ public class ApacheHttpHelper implements HttpHelper {
 
   @Override
   public HttpResponse httpPost(URI uri)
-      throws OAuthExpectationFailedException, OAuthMessageSignerException, IOException,
-          OAuthCommunicationException {
+          throws OAuthException, IOException {
     HttpPost request = new HttpPost(uri);
     oAuthConsumer().sign(request);
       return httpClient.execute(request);
@@ -52,8 +48,7 @@ public class ApacheHttpHelper implements HttpHelper {
 
   @Override
   public HttpResponse httpGet(URI uri)
-      throws OAuthExpectationFailedException, OAuthCommunicationException,
-          OAuthMessageSignerException, IOException {
+          throws OAuthException, IOException {
     HttpGet request = new HttpGet(uri);
     oAuthConsumer().sign(request);
       return httpClient.execute(request);

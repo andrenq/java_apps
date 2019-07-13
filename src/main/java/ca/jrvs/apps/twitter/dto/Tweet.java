@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
   "created_at",
@@ -39,7 +40,7 @@ public class Tweet {
   private String createdAt;
 
   @JsonProperty("id")
-  private Long id;
+  private long id;
 
   @JsonProperty("id_str")
   private String idStr;
@@ -54,7 +55,7 @@ public class Tweet {
   private Coordinates coordinates;
 
   @JsonProperty("retweet_count")
-  private Long retweetCount;
+  private long retweetCount;
 
   @JsonProperty("favorite_count")
   private Long favoriteCount;
@@ -75,18 +76,13 @@ public class Tweet {
     this.createdAt = createdAt;
   }
 
-  public Tweet withCreatedAt(String createdAt) {
-    this.createdAt = createdAt;
-    return this;
-  }
-
   @JsonProperty("id")
-  public Long getId() {
+  public long getId() {
     return id;
   }
 
   @JsonProperty("id")
-  public void setId(Long id) {
+  public void setId(long id) {
     this.id = id;
   }
 
@@ -100,11 +96,6 @@ public class Tweet {
     this.idStr = idStr;
   }
 
-  public Tweet withIdStr(String idStr) {
-    this.idStr = idStr;
-    return this;
-  }
-
   @JsonProperty("text")
   public String getText() {
     return text;
@@ -115,10 +106,6 @@ public class Tweet {
     this.text = text;
   }
 
-  public Tweet withText(String text) {
-    this.text = text;
-    return this;
-  }
 
   @JsonProperty("entities")
   public Entities getEntities() {
@@ -130,10 +117,6 @@ public class Tweet {
     this.entities = entities;
   }
 
-  public Tweet withEntities(Entities entities) {
-    this.entities = entities;
-    return this;
-  }
 
   @JsonProperty("coordinates")
   public Coordinates getCoordinates() {
@@ -158,11 +141,6 @@ public class Tweet {
   @JsonProperty("retweeted")
   public void setRetweeted(Boolean retweeted) {
     this.retweeted = retweeted;
-  }
-
-  public Tweet withRetweeted(Boolean retweeted) {
-    this.retweeted = retweeted;
-    return this;
   }
 
   @Override

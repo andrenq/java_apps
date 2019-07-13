@@ -27,8 +27,7 @@ public class TwitterRestDao implements CrdRepository<Tweet, String> {
 
   @Override
   public Tweet create(Tweet entity)
-      throws IOException, OAuthCommunicationException, OAuthExpectationFailedException,
-          OAuthMessageSignerException {
+          throws OAuthException, IOException {
     String status = "status=" + URLEncoder.encode(entity.getText(), "utf-8");
     String latitude = "lat=" + entity.getCoordinates().getCoordinates().get(0);
     String longitude = "long=" + entity.getCoordinates().getCoordinates().get(1);
@@ -36,12 +35,10 @@ public class TwitterRestDao implements CrdRepository<Tweet, String> {
     String saveURL = "update.json?";
     String postUrl = baseURL + saveURL + status + AMPERSAND + latitude + AMPERSAND + longitude;
     HttpResponse response = httpHelper.httpPost(URI.create(postUrl));
-    // use mod 201%100 = 2
     if (response.getStatusLine().getStatusCode() % HTTP_OK > 2) {
       throw new RuntimeException(
               "\nError posting tweet:\nHTTP response: " + response.getStatusLine().toString());
     }
-    System.out.println("Created tweet:");
     return toObjectFromJson(EntityUtils.toString(response.getEntity()), Tweet.class);
   }
 
@@ -50,16 +47,14 @@ public class TwitterRestDao implements CrdRepository<Tweet, String> {
     String findURL = "show.json?id=";
     HttpResponse response = httpHelper.httpGet(URI.create(baseURL + findURL + s));
     if (response.getStatusLine().getStatusCode() % HTTP_OK > 2) {
-      throw new RuntimeException(
-              "\nCould not find tweet:\nHTTP response: " + response.getStatusLine());
+      System.out.println("\nCould not find tweet:\nHTTP response: " + response.getStatusLine());
     }
     return toObjectFromJson(EntityUtils.toString(response.getEntity()), Tweet.class);
   }
 
   @Override
   public Tweet deleteById(String s)
-      throws OAuthExpectationFailedException, OAuthCommunicationException,
-          OAuthMessageSignerException, IOException {
+          throws OAuthException, IOException {
     String deleURL = "destroy/";
     HttpResponse response = httpHelper.httpPost(URI.create(baseURL + deleURL + s + ".json"));
     return toObjectFromJson(EntityUtils.toString(response.getEntity()), Tweet.class);

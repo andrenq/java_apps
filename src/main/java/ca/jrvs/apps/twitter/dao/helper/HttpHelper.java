@@ -1,6 +1,7 @@
 package ca.jrvs.apps.twitter.dao.helper;
 
 import oauth.signpost.exception.OAuthCommunicationException;
+import oauth.signpost.exception.OAuthException;
 import oauth.signpost.exception.OAuthExpectationFailedException;
 import oauth.signpost.exception.OAuthMessageSignerException;
 import org.apache.http.HttpResponse;
@@ -11,14 +12,11 @@ import java.net.URI;
 
 public interface HttpHelper {
   HttpResponse httpPost(URI uri)
-      throws OAuthCommunicationException, OAuthExpectationFailedException,
-          OAuthMessageSignerException, IOException;
+          throws OAuthException, IOException;
 
   HttpResponse httpPost(URI uri, StringEntity stringEntity)
-      throws OAuthCommunicationException, OAuthExpectationFailedException,
-          OAuthMessageSignerException, IOException;
+          throws OAuthException, IOException;
 
   HttpResponse httpGet(URI uri)
-      throws OAuthExpectationFailedException, OAuthCommunicationException,
-          OAuthMessageSignerException, IOException;
+          throws OAuthException, IOException;
 }
