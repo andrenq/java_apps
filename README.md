@@ -53,42 +53,37 @@ You will be able to call all methods on CustomerDAO and OrderDAO from `JDBCExecu
  ![image](https://drive.google.com/uc?export=view&id=1_RH6sYWUKTJ6hStQWGrE5zPPkxRRPPCn)
  twitter
    dao
- CrdRepository.class
-helper
-    ?   ?               ?   ?   ??? ApacheHttpHelper.class
-    ?   ?               ?   ?   ??? HttpHelper.class
-    ?   ?               ?   ?   ??? HttpMethod.class
-    ?   ?               ?   ??? TwitterRestDao.class
-    ?   ?               ??? dto
-    ?   ?               ?   ??? Coordinates.class
-    ?   ?               ?   ??? Entities.class
-    ?   ?               ?   ??? Hashtag.class
-    ?   ?               ?   ??? Tweet.class
-    ?   ?               ?   ??? UserMention.class
-    ?   ?               ??? example
-    ?   ?               ?   ??? dto
-    ?   ?               ?   ?   ??? Company.class
-    ?   ?               ?   ?   ??? Dividend.class
-    ?   ?               ?   ?   ??? Financial.class
-    ?   ?               ?   ??? JsonParser.class
-    ?   ?               ?   ??? TwitterApiTest.class
-    ?   ?               ??? service
-    ?   ?               ?   ??? TwitterService.class
-    ?   ?               ?   ??? TwitterServiceImp.class
-    ?   ?               ??? spring
-    ?   ?               ?   ??? TwitterCLIBean.class
-    ?   ?               ?   ??? TwitterCLIComponentScan.class
-    ?   ?               ?   ??? TwitterCLISpringBoot.class
-    ?   ?               ??? TwitterCLI.class
-    ?   ?               ??? TwitterCLIRunner.class
-    ?   ?               ??? util
-    ?   ?                   ??? TwitterUtil.class
+CrdRepository.class
+ApacheHttpHelper.class
+HttpHelper.class
+HttpMethod.class
+TwitterRestDao.class
+dto
+Coordinates.class
+Entities.class
+Hashtag.class
+Tweet.class
+UserMention.class
+JsonParser.class
+
+TwitterApiTest.class
+service
+TwitterService.class
+TwitterServiceImp.class
+spring
+TwitterCLIBean.class
+TwitterCLIComponentScan.class
+TwitterCLISpringBoot.class
+TwitterCLI.class
+TwitterCLIRunner.class
+util
+TwitterUtil.class
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU1Nzg3MjI4LDE5MTczOTkzODgsLTEzNz
-UzNTI1NDUsLTM5MDk1OTEyNywtNzQ1Njg2NzA4LDE0NDU4MjE2
-NDcsLTE1MTI4OTkzODYsMTEwOTExNTExNCwtNzA0MjMyNDk3LC
-0xNjQ3Mjc3NTkyLC0xMjkyOTE2MjEyLDg3MzExMTAwMywtMTQy
-OTUyNTQxNiwtMjA4MTM0NDQwMCwtNDY3NTY5OTg5LDE4NjcxND
-E3MjcsLTE2OTg4MDEyNTcsMjA0MTQ0Mjk2NV19
+eyJoaXN0b3J5IjpbLTUxMTc5MDMyOCwxOTE3Mzk5Mzg4LC0xMz
+c1MzUyNTQ1LC0zOTA5NTkxMjcsLTc0NTY4NjcwOCwxNDQ1ODIx
+NjQ3LC0xNTEyODk5Mzg2LDExMDkxMTUxMTQsLTcwNDIzMjQ5Ny
+wtMTY0NzI3NzU5MiwtMTI5MjkxNjIxMiw4NzMxMTEwMDMsLTE0
+Mjk1MjU0MTYsLTIwODEzNDQ0MDAsLTQ2NzU2OTk4OSwxODY3MT
+QxNzI3LC0xNjk4ODAxMjU3LDIwNDE0NDI5NjVdfQ==
 -->
