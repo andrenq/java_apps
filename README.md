@@ -51,8 +51,41 @@ You will be able to call all methods on CustomerDAO and OrderDAO from `JDBCExecu
  For the Twitter app, no installations are required. All you need is to execute the code using Java 8, and to include all the dependencies on the pom.xml file.
  The app is divided as following:
  ![image](https://drive.google.com/uc?export=view&id=1_RH6sYWUKTJ6hStQWGrE5zPPkxRRPPCn)
+ twitter
+   dao
+ CrdRepository.class
+helper
+    ?   ?               ?   ?   ??? ApacheHttpHelper.class
+    ?   ?               ?   ?   ??? HttpHelper.class
+    ?   ?               ?   ?   ??? HttpMethod.class
+    ?   ?               ?   ??? TwitterRestDao.class
+    ?   ?               ??? dto
+    ?   ?               ?   ??? Coordinates.class
+    ?   ?               ?   ??? Entities.class
+    ?   ?               ?   ??? Hashtag.class
+    ?   ?               ?   ??? Tweet.class
+    ?   ?               ?   ??? UserMention.class
+    ?   ?               ??? example
+    ?   ?               ?   ??? dto
+    ?   ?               ?   ?   ??? Company.class
+    ?   ?               ?   ?   ??? Dividend.class
+    ?   ?               ?   ?   ??? Financial.class
+    ?   ?               ?   ??? JsonParser.class
+    ?   ?               ?   ??? TwitterApiTest.class
+    ?   ?               ??? service
+    ?   ?               ?   ??? TwitterService.class
+    ?   ?               ?   ??? TwitterServiceImp.class
+    ?   ?               ??? spring
+    ?   ?               ?   ??? TwitterCLIBean.class
+    ?   ?               ?   ??? TwitterCLIComponentScan.class
+    ?   ?               ?   ??? TwitterCLISpringBoot.class
+    ?   ?               ??? TwitterCLI.class
+    ?   ?               ??? TwitterCLIRunner.class
+    ?   ?               ??? util
+    ?   ?                   ??? TwitterUtil.class
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NTA3NTMwLDE5MTczOTkzODgsLTEzNz
+eyJoaXN0b3J5IjpbNTU1Nzg3MjI4LDE5MTczOTkzODgsLTEzNz
 UzNTI1NDUsLTM5MDk1OTEyNywtNzQ1Njg2NzA4LDE0NDU4MjE2
 NDcsLTE1MTI4OTkzODYsMTEwOTExNTExNCwtNzA0MjMyNDk3LC
 0xNjQ3Mjc3NTkyLC0xMjkyOTE2MjEyLDg3MzExMTAwMywtMTQy
