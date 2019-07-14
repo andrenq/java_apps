@@ -2,7 +2,9 @@ package ca.jrvs.apps.twitter.service;
 
 import ca.jrvs.apps.twitter.dao.CrdRepository;
 import ca.jrvs.apps.twitter.dto.Tweet;
+import oauth.signpost.exception.OAuthException;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -53,6 +55,8 @@ public class TwitterServiceImp implements TwitterService {
         if (!responseTweet.getIdStr().isEmpty()) {
           tweetList.add(responseTweet);
         }
+      } catch (IllegalArgumentException e) {
+        throw e;
       } catch (Exception e) {
         System.out.println("Could not delete id: " + id);
       }

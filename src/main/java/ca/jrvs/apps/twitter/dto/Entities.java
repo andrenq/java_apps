@@ -21,9 +21,6 @@ public class Entities {
   @JsonProperty("urls")
   private List<Object> urls = null;
 
-  @JsonProperty("media")
-  private List<Medium> media = null;
-
   @JsonProperty("hashtags")
   public List<Hashtag> getHashtags() {
     return hashtags;
@@ -84,20 +81,6 @@ public class Entities {
     return this;
   }
 
-  @JsonProperty("media")
-  public List<Medium> getMedia() {
-    return media;
-  }
-
-  @JsonProperty("media")
-  public void setMedia(List<Medium> media) {
-    this.media = media;
-  }
-
-  public Entities withMedia(List<Medium> media) {
-    this.media = media;
-    return this;
-  }
 
   @Override
   public String toString() {
@@ -110,8 +93,6 @@ public class Entities {
         + userMentions
         + ", urls="
         + urls
-        + ", media="
-        + media
         + '}';
   }
 }

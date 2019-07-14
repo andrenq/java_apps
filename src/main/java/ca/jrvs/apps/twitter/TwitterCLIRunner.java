@@ -70,8 +70,7 @@ class TwitterCLIRunner {
         deleteTweet(args);
         break;
       default:
-        System.out.println("USAGE: TwitterCLIApp post|show|delete args");
-        break;
+          throw new RuntimeException("USAGE: TwitterCLIApp post|show|deleteTweets args");
     }
   }
 }
