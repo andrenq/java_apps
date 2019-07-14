@@ -50,12 +50,12 @@ You will be able to call all methods on CustomerDAO and OrderDAO from `JDBCExecu
  ### Getting Started
  For the Twitter app, no installations are required. All you need is to execute the code using Java 8, and to include all the dependencies on the pom.xml file.
  The app is divided as following:
- ![image](https://drive.google.com/uc?export=view&id=1AwyghOuU2UBMr6_ysmbk2eKSufjbwx6_)
+ ![image](https://drive.google.com/uc?export=view&id=1_RH6sYWUKTJ6hStQWGrE5zPPkxRRPPCn)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1Njk0MjM1MiwxOTE3Mzk5Mzg4LC0xMz
-c1MzUyNTQ1LC0zOTA5NTkxMjcsLTc0NTY4NjcwOCwxNDQ1ODIx
-NjQ3LC0xNTEyODk5Mzg2LDExMDkxMTUxMTQsLTcwNDIzMjQ5Ny
-wtMTY0NzI3NzU5MiwtMTI5MjkxNjIxMiw4NzMxMTEwMDMsLTE0
-Mjk1MjU0MTYsLTIwODEzNDQ0MDAsLTQ2NzU2OTk4OSwxODY3MT
-QxNzI3LC0xNjk4ODAxMjU3LDIwNDE0NDI5NjVdfQ==
+eyJoaXN0b3J5IjpbMTM3NTA3NTMwLDE5MTczOTkzODgsLTEzNz
+UzNTI1NDUsLTM5MDk1OTEyNywtNzQ1Njg2NzA4LDE0NDU4MjE2
+NDcsLTE1MTI4OTkzODYsMTEwOTExNTExNCwtNzA0MjMyNDk3LC
+0xNjQ3Mjc3NTkyLC0xMjkyOTE2MjEyLDg3MzExMTAwMywtMTQy
+OTUyNTQxNiwtMjA4MTM0NDQwMCwtNDY3NTY5OTg5LDE4NjcxND
+E3MjcsLTE2OTg4MDEyNTcsMjA0MTQ0Mjk2NV19
 -->
