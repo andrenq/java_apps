@@ -2,7 +2,7 @@
 This repository contains three java apps.
 - [Java Grep app](#grep) - Implementation of the grep command in java. The app searches for a text pattern recursively in a given directory and outputs all matched lines to a file.
 - [JDBC](#jdbc) - Example of Java Database Connectivity (JDBC) API usage. This app uses Data Access Object (DAO) to read and manage data from a Postgre database.
-- [Twitter](#twitter)- 
+- [Twitter](#twitter)- Implementation of a Twitter client that can post new tweets, show old tweets by given id and delete tweets by id.
 <a name="grep"></a>
 # Java Grep app
 ### Getting Started
@@ -50,10 +50,10 @@ You will be able to call all methods on CustomerDAO and OrderDAO from `JDBCExecu
  <a name="twitter"></a>
  # Twitter
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNzM5OTM4OCwtMTM3NTM1MjU0NSwtMz
-kwOTU5MTI3LC03NDU2ODY3MDgsMTQ0NTgyMTY0NywtMTUxMjg5
-OTM4NiwxMTA5MTE1MTE0LC03MDQyMzI0OTcsLTE2NDcyNzc1OT
-IsLTEyOTI5MTYyMTIsODczMTExMDAzLC0xNDI5NTI1NDE2LC0y
-MDgxMzQ0NDAwLC00Njc1Njk5ODksMTg2NzE0MTcyNywtMTY5OD
-gwMTI1NywyMDQxNDQyOTY1XX0=
+eyJoaXN0b3J5IjpbLTE5MTg3NDc3NDYsMTkxNzM5OTM4OCwtMT
+M3NTM1MjU0NSwtMzkwOTU5MTI3LC03NDU2ODY3MDgsMTQ0NTgy
+MTY0NywtMTUxMjg5OTM4NiwxMTA5MTE1MTE0LC03MDQyMzI0OT
+csLTE2NDcyNzc1OTIsLTEyOTI5MTYyMTIsODczMTExMDAzLC0x
+NDI5NTI1NDE2LC0yMDgxMzQ0NDAwLC00Njc1Njk5ODksMTg2Nz
+E0MTcyNywtMTY5ODgwMTI1NywyMDQxNDQyOTY1XX0=
 -->
