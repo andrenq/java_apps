@@ -6,7 +6,7 @@ This repository contains three java apps.
 <a name="grep"></a>
 # Java Grep app
 ### Getting Started
-For the Java Grep app, no installations are required. All you need is to execute the code using Java 8.
+For the Java Grep app, no installations are required. All you need is to execute the code using Java 8, and to include all the dependencies on the pom.xml file.
 This app is divided into three files:
  - `JavaGrep` is the application interface. Contains methods and attributes.
  - `JavaGrepImp` is the implementation of `JavaGrep`. Implements all methods and adds new ones.
@@ -48,9 +48,11 @@ You will be able to call all methods on CustomerDAO and OrderDAO from `JDBCExecu
  <a name="twitter"></a>
  # Twitter
  ### Getting Started
- For the Twitter app, no installations are required. All you need is to execute the code using Java 8, and
+ For the Twitter app, no installations are required. All you need is to execute the code using Java 8, and to include all the dependencies on the pom.xml file.
+ The app is divided as following:
+ ![image](https://drive.google.com/uc?export=view&id=1AwyghOuU2UBMr6_ysmbk2eKSufjbwx6_)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMDc3NjYzNCwxOTE3Mzk5Mzg4LC0xMz
+eyJoaXN0b3J5IjpbMTI1Njk0MjM1MiwxOTE3Mzk5Mzg4LC0xMz
 c1MzUyNTQ1LC0zOTA5NTkxMjcsLTc0NTY4NjcwOCwxNDQ1ODIx
 NjQ3LC0xNTEyODk5Mzg2LDExMDkxMTUxMTQsLTcwNDIzMjQ5Ny
 wtMTY0NzI3NzU5MiwtMTI5MjkxNjIxMiw4NzMxMTEwMDMsLTE0
