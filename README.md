@@ -7,7 +7,6 @@ This repository contains three java apps.
 # Java Grep app
 ### Getting Started
 For the Java Grep app, no installations are required. All you need is to execute the code using Java 8.
-
 This app is divided into three files:
  - `JavaGrep` is the application interface. Contains methods and attributes.
  - `JavaGrepImp` is the implementation of `JavaGrep`. Implements all methods and adds new ones.
@@ -46,14 +45,15 @@ E.g.,`/jdbc/java JDBCExecutor localhost postgres 1234`
 
 You will be able to call all methods on CustomerDAO and OrderDAO from `JDBCExecutor` , using the main method. You will notice that it already contains a few examples.
 
-
  <a name="twitter"></a>
  # Twitter
+ ### Getting Started
+ For the Twitter app, no installations are required. All you need is to execute the code using Java 8, and
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTg3NDc3NDYsMTkxNzM5OTM4OCwtMT
-M3NTM1MjU0NSwtMzkwOTU5MTI3LC03NDU2ODY3MDgsMTQ0NTgy
-MTY0NywtMTUxMjg5OTM4NiwxMTA5MTE1MTE0LC03MDQyMzI0OT
-csLTE2NDcyNzc1OTIsLTEyOTI5MTYyMTIsODczMTExMDAzLC0x
-NDI5NTI1NDE2LC0yMDgxMzQ0NDAwLC00Njc1Njk5ODksMTg2Nz
-E0MTcyNywtMTY5ODgwMTI1NywyMDQxNDQyOTY1XX0=
+eyJoaXN0b3J5IjpbLTgwMDc3NjYzNCwxOTE3Mzk5Mzg4LC0xMz
+c1MzUyNTQ1LC0zOTA5NTkxMjcsLTc0NTY4NjcwOCwxNDQ1ODIx
+NjQ3LC0xNTEyODk5Mzg2LDExMDkxMTUxMTQsLTcwNDIzMjQ5Ny
+wtMTY0NzI3NzU5MiwtMTI5MjkxNjIxMiw4NzMxMTEwMDMsLTE0
+Mjk1MjU0MTYsLTIwODEzNDQ0MDAsLTQ2NzU2OTk4OSwxODY3MT
+QxNzI3LC0xNjk4ODAxMjU3LDIwNDE0NDI5NjVdfQ==
 -->
