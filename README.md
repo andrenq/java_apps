@@ -68,16 +68,18 @@ You will be able to call all methods on CustomerDAO and OrderDAO from `JDBCExecu
 
  ### Usage
  Execute the app passing the parameters as arguments:
- - Post: `post "message with less than 280 chars" "-14.7654:-20` 
+ - Post: `post "message with less than 280 chars" "-14.7654:-20.6771"` latitude e longitude are mandatory.
+ - Show: args:`show 12345678912344123` (tweet id)
+ - delete: args  
  
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDE2MzA0ODIsLTE2NDYwNDE0MjMsMT
-kxNzM5OTM4OCwtMTM3NTM1MjU0NSwtMzkwOTU5MTI3LC03NDU2
-ODY3MDgsMTQ0NTgyMTY0NywtMTUxMjg5OTM4NiwxMTA5MTE1MT
-E0LC03MDQyMzI0OTcsLTE2NDcyNzc1OTIsLTEyOTI5MTYyMTIs
-ODczMTExMDAzLC0xNDI5NTI1NDE2LC0yMDgxMzQ0NDAwLC00Nj
-c1Njk5ODksMTg2NzE0MTcyNywtMTY5ODgwMTI1NywyMDQxNDQy
-OTY1XX0=
+eyJoaXN0b3J5IjpbLTg2MDIwNzI2NSwtMTY0NjA0MTQyMywxOT
+E3Mzk5Mzg4LC0xMzc1MzUyNTQ1LC0zOTA5NTkxMjcsLTc0NTY4
+NjcwOCwxNDQ1ODIxNjQ3LC0xNTEyODk5Mzg2LDExMDkxMTUxMT
+QsLTcwNDIzMjQ5NywtMTY0NzI3NzU5MiwtMTI5MjkxNjIxMiw4
+NzMxMTEwMDMsLTE0Mjk1MjU0MTYsLTIwODEzNDQ0MDAsLTQ2Nz
+U2OTk4OSwxODY3MTQxNzI3LC0xNjk4ODAxMjU3LDIwNDE0NDI5
+NjVdfQ==
 -->
