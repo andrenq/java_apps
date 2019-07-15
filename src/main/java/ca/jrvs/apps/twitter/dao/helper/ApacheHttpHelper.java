@@ -42,16 +42,14 @@ public class ApacheHttpHelper implements HttpHelper {
     }
 
     @Override
-    public HttpResponse httpPost(URI uri)
-            throws OAuthException, IOException {
+    public HttpResponse httpPost(URI uri) throws OAuthException, IOException {
         HttpPost request = new HttpPost(uri);
         oAuthConsumer().sign(request);
         return httpClient.execute(request);
     }
 
     @Override
-    public HttpResponse httpGet(URI uri)
-            throws OAuthException, IOException {
+    public HttpResponse httpGet(URI uri) throws OAuthException, IOException {
         HttpGet request = new HttpGet(uri);
         oAuthConsumer().sign(request);
         return httpClient.execute(request);

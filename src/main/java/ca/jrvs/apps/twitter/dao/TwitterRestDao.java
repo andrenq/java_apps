@@ -18,11 +18,9 @@ import static ca.jrvs.apps.twitter.example.JsonParser.toObjectFromJson;
 
 @Repository
 public class TwitterRestDao implements CrdRepository<Tweet, String> {
-  private final String baseURL = "https://api.twitter.com/1.1/statuses/";
-
   // Response code
   private static final int HTTP_OK = 200;
-
+  private final String baseURL = "https://api.twitter.com/1.1/statuses/";
   private HttpHelper httpHelper;
 
   @Autowired
@@ -31,8 +29,7 @@ public class TwitterRestDao implements CrdRepository<Tweet, String> {
   }
 
   @Override
-  public Tweet create(Tweet entity)
-          throws OAuthException, IOException {
+  public Tweet create(Tweet entity) throws OAuthException, IOException {
     String status = "status=" + URLEncoder.encode(entity.getText(), "utf-8");
     String latitude = "lat=" + entity.getCoordinates().getCoordinates().get(0);
     String longitude = "long=" + entity.getCoordinates().getCoordinates().get(1);
@@ -58,8 +55,7 @@ public class TwitterRestDao implements CrdRepository<Tweet, String> {
   }
 
   @Override
-  public Tweet deleteById(String s)
-          throws OAuthException, IOException {
+  public Tweet deleteById(String s) throws OAuthException, IOException {
     String deleURL = "destroy/";
     HttpResponse response = httpHelper.httpPost(URI.create(baseURL + deleURL + s + ".json"));
     return toObjectFromJson(EntityUtils.toString(response.getEntity()), Tweet.class);

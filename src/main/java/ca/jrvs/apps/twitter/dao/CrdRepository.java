@@ -1,10 +1,6 @@
 package ca.jrvs.apps.twitter.dao;
 
-import oauth.signpost.exception.OAuthCommunicationException;
 import oauth.signpost.exception.OAuthException;
-import oauth.signpost.exception.OAuthExpectationFailedException;
-import oauth.signpost.exception.OAuthMessageSignerException;
-
 import java.io.IOException;
 
 public interface CrdRepository<T, ID> {

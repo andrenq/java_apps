@@ -39,12 +39,12 @@ public class TwitterCLIRunner {
     if (args.length < 2) {
       throw new RuntimeException("USAGE: TwitterCLIApp show tweet_id [fields]");
     }
-      Tweet tweet = twitterService.showTweet(args[1], null);
-      if (!(tweet.getIdStr() == null)) {
-          System.out.println(tweet);
-      } else {
-          System.out.println("Could not find id:" + args[1]);
-      }
+    Tweet tweet = twitterService.showTweet(args[1], null);
+    if (!(tweet.getIdStr() == null)) {
+      System.out.println(tweet);
+    } else {
+      System.out.println("Could not find id:" + args[1]);
+    }
   }
 
   private void deleteTweet(String[] args) {
@@ -53,9 +53,9 @@ public class TwitterCLIRunner {
     }*/
     String tweetIds = args[1];
     String[] ids = tweetIds.split(",");
-      for (Tweet t : twitterService.deleteTweets(ids)) {
-          System.out.println(t);
-      }
+    for (Tweet t : twitterService.deleteTweets(ids)) {
+      System.out.println(t);
+    }
   }
 
   public void run(String[] args) {
@@ -73,7 +73,7 @@ public class TwitterCLIRunner {
         deleteTweet(args);
         break;
       default:
-          throw new RuntimeException("USAGE: TwitterCLIApp post|show|deleteTweets args");
+        throw new RuntimeException("USAGE: TwitterCLIApp post|show|deleteTweets args");
     }
   }
 }

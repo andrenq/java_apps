@@ -4,35 +4,18 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-  "created_at",
-  "id",
-  "id_str",
-  "text",
-  "truncated",
-  "entities",
-  "source",
-  "in_reply_to_status_id",
-  "in_reply_to_status_id_str",
-  "in_reply_to_user_id",
-  "in_reply_to_user_id_str",
-  "in_reply_to_screen_name",
-  "user",
-  "geo",
-  "coordinates",
-  "place",
-  "contributors",
-  "is_quote_status",
-  "retweet_count",
-  "favorite_count",
-  "favorited",
-  "retweeted",
-  "lang",
-  "retweeted_status",
-  "extended_entities",
-  "possibly_sensitive"
+        "created_at",
+        "id",
+        "id_str",
+        "text",
+        "entities",
+        "coordinates",
+        "retweet_count",
+        "favorite_count",
+        "favorited",
+        "retweeted"
 })
 public class Tweet {
 
@@ -106,7 +89,6 @@ public class Tweet {
     this.text = text;
   }
 
-
   @JsonProperty("entities")
   public Entities getEntities() {
     return entities;
@@ -116,7 +98,6 @@ public class Tweet {
   public void setEntities(Entities entities) {
     this.entities = entities;
   }
-
 
   @JsonProperty("coordinates")
   public Coordinates getCoordinates() {

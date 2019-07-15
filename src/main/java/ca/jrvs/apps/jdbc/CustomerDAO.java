@@ -31,6 +31,10 @@ public class CustomerDAO extends DataAccessObject<Customer> {
           + "email,phone,address,city,state,zipcode FROM customer "
           + "ORDER by last_name,first_name LIMIT ? OFFSET ?";
 
+    public CustomerDAO(Connection connection) {
+        super(connection);
+    }
+
   public List<Customer> findAllSorted(int limit) {
     List<Customer> customers = new ArrayList<>();
     try (PreparedStatement statement = this.connection.prepareStatement(GET_ALL_LMT)) {
@@ -81,10 +85,6 @@ public class CustomerDAO extends DataAccessObject<Customer> {
       throw new RuntimeException(e);
     }
     return customers;
-  }
-
-  public CustomerDAO(Connection connection) {
-    super(connection);
   }
 
   @Override
@@ -153,7 +153,7 @@ public class CustomerDAO extends DataAccessObject<Customer> {
 
   @Override
   public Customer create(Customer dto) {
-    try (PreparedStatement statement = this.connection.prepareStatement(INSERT); ) {
+      try (PreparedStatement statement = this.connection.prepareStatement(INSERT)) {
       statement.setString(1, dto.getFirstName());
       statement.setString(2, dto.getLastName());
       statement.setString(3, dto.getEmail());

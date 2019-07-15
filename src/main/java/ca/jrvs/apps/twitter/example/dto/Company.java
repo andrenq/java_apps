@@ -69,44 +69,9 @@ public class Company {
         + "]";
   }
 
-  @JsonProperty("symbol")
-  public void setSymbol(String symbol) {
-    this.symbol = symbol;
-  }
-
-  @JsonProperty("companyName")
-  public void setCompanyName(String companyName) {
-    this.companyName = companyName;
-  }
-
-  @JsonProperty("exchange")
-  public void setExchange(String exchange) {
-    this.exchange = exchange;
-  }
-
-  @JsonProperty("description")
-  public void setDescription(String description) {
-    this.description = description;
-  }
-
   @JsonProperty("CEO")
   public void setcEO(String CEO) {
     this.cEO = CEO;
-  }
-
-  @JsonProperty("sector")
-  public void setSector(String sector) {
-    this.sector = sector;
-  }
-
-  @JsonProperty("financials")
-  public void setFinancial(List<Object> financial) {
-    this.financial = financial;
-  }
-
-  @JsonProperty("dividends")
-  public void setDividends(List<Object> dividends) {
-    this.dividends = dividends;
   }
 
   @JsonProperty("symbol")
@@ -114,20 +79,40 @@ public class Company {
     return this.symbol;
   }
 
+    @JsonProperty("symbol")
+    public void setSymbol(String symbol) {
+        this.symbol = symbol;
+    }
+
   @JsonProperty("companyName")
   public String getCompanyName() {
     return companyName;
   }
+
+    @JsonProperty("companyName")
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
 
   @JsonProperty("exchange")
   public String getExchange() {
     return exchange;
   }
 
+    @JsonProperty("exchange")
+    public void setExchange(String exchange) {
+        this.exchange = exchange;
+    }
+
   @JsonProperty("description")
   public String getDescription() {
     return description;
   }
+
+    @JsonProperty("description")
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
   @JsonProperty("CEO")
   public String getCEO() {
@@ -139,13 +124,28 @@ public class Company {
     return sector;
   }
 
+    @JsonProperty("sector")
+    public void setSector(String sector) {
+        this.sector = sector;
+    }
+
   @JsonProperty("financial")
   public List<Object> getFinancial() {
     return financial;
   }
 
+    @JsonProperty("financials")
+    public void setFinancial(List<Object> financial) {
+        this.financial = financial;
+    }
+
   @JsonProperty("dividend")
   public List<Object> getDividends() {
     return dividends;
   }
+
+    @JsonProperty("dividends")
+    public void setDividends(List<Object> dividends) {
+        this.dividends = dividends;
+    }
 }

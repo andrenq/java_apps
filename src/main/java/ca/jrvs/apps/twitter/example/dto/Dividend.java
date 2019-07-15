@@ -23,35 +23,35 @@ public class Dividend {
         + "}";
   }
 
-  public void setExDate(Date exDate) {
-    this.exDate = exDate;
-  }
-
-  public void setPaymentDate(Date paymentDate) {
-    this.paymentDate = paymentDate;
-  }
-
-  public void setDeclareDate(Date declareDate) {
-    this.declareDate = declareDate;
-  }
-
-  public void setAmount(BigDecimal amount) {
-    this.amount = amount;
-  }
-
   public Date getExDate() {
     return exDate;
   }
+
+    public void setExDate(Date exDate) {
+        this.exDate = exDate;
+    }
 
   public Date getPaymentDate() {
     return paymentDate;
   }
 
+    public void setPaymentDate(Date paymentDate) {
+        this.paymentDate = paymentDate;
+    }
+
   public Date getDeclareDate() {
     return declareDate;
   }
 
+    public void setDeclareDate(Date declareDate) {
+        this.declareDate = declareDate;
+    }
+
   public BigDecimal getAmount() {
     return amount;
   }
+
+    public void setAmount(BigDecimal amount) {
+        this.amount = amount;
+    }
 }

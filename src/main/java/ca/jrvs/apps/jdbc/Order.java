@@ -19,89 +19,85 @@ public class Order implements DataTransferObject {
   private String salespersonEmail;
   private List<OrderLine> orderLines;
 
-  public void setId(long orderId) {
-    this.orderId = orderId;
-  }
-
-  public void setCreationDate(Date creationDate) {
-    this.creationDate = creationDate;
-  }
-
-  public void setTotalDue(BigDecimal totalDue) {
-    this.totalDue = totalDue;
-  }
-
-  public void setStatus(String status) {
-    this.status = status;
-  }
-
-  public void setCustomerFirstName(String customerFirstName) {
-    this.customerFirstName = customerFirstName;
-  }
-
-  public void setCustomerLastName(String customerLastName) {
-    this.customerLastName = customerLastName;
-  }
-
-  public void setCustomerEmail(String customerEmail) {
-    this.customerEmail = customerEmail;
-  }
-
-  public void setSalespersonFirstName(String salespersonFirstName) {
-    this.salespersonFirstName = salespersonFirstName;
-  }
-
-  public void setSalespersonLastName(String salespersonLastName) {
-    this.salespersonLastName = salespersonLastName;
-  }
-
-  public void setSalespersonEmail(String salespersonEmail) {
-    this.salespersonEmail = salespersonEmail;
-  }
-
-  public void setOrderLines(List<OrderLine> orderLines) {
-    this.orderLines = orderLines;
-  }
-
   public Date getCreationDate() {
     return this.creationDate;
   }
+
+    public void setCreationDate(Date creationDate) {
+        this.creationDate = creationDate;
+    }
 
   public BigDecimal getTotalDue() {
     return this.totalDue;
   }
 
+    public void setTotalDue(BigDecimal totalDue) {
+        this.totalDue = totalDue;
+    }
+
   public String getStatus() {
     return this.status;
   }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
   public String getCustomerFirstName() {
     return this.customerFirstName;
   }
 
+    public void setCustomerFirstName(String customerFirstName) {
+        this.customerFirstName = customerFirstName;
+    }
+
   public String getCustomerLastName() {
     return this.customerLastName;
   }
+
+    public void setCustomerLastName(String customerLastName) {
+        this.customerLastName = customerLastName;
+    }
 
   public String getCustomerEmail() {
     return this.customerEmail;
   }
 
+    public void setCustomerEmail(String customerEmail) {
+        this.customerEmail = customerEmail;
+    }
+
   public String getSalespersonFirstName() {
     return this.salespersonFirstName;
   }
+
+    public void setSalespersonFirstName(String salespersonFirstName) {
+        this.salespersonFirstName = salespersonFirstName;
+    }
 
   public String getSalespersonLastName() {
     return this.salespersonLastName;
   }
 
+    public void setSalespersonLastName(String salespersonLastName) {
+        this.salespersonLastName = salespersonLastName;
+    }
+
   public String getSalespersonEmail() {
     return this.salespersonEmail;
   }
 
+    public void setSalespersonEmail(String salespersonEmail) {
+        this.salespersonEmail = salespersonEmail;
+    }
+
   public List<OrderLine> getOrderLines() {
     return orderLines;
   }
+
+    public void setOrderLines(List<OrderLine> orderLines) {
+        this.orderLines = orderLines;
+    }
 
   @Override
   public String toString() {
@@ -134,4 +130,8 @@ public class Order implements DataTransferObject {
   public long getId() {
     return this.orderId;
   }
+
+    public void setId(long orderId) {
+        this.orderId = orderId;
+    }
 }
