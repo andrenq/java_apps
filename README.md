@@ -61,8 +61,9 @@ You will be able to call all methods on CustomerDAO and OrderDAO from `JDBCExecu
 - Data transfer objects: `Coordinates`, `Entities`, `Hashtag`, `Tweet`, `UserMention`
 - `JsonParser` implements methods to parse from Json to object and from object to Json.
 - `TwitterServiceImp` implements `TwitterService` business implementation of the methods post, show and delete tweet.
-TwitterCLI.class
-TwitterCLIRunner.class
+- `TwitterCLIRunner` recive args and is respo
+TwitterCLI
+
 
 TwitterCLIBean.class
 TwitterCLIComponentScan.class
@@ -72,10 +73,10 @@ util
 TwitterUtil.class
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MTYyMTU4MSwxOTE3Mzk5Mzg4LC0xMz
-c1MzUyNTQ1LC0zOTA5NTkxMjcsLTc0NTY4NjcwOCwxNDQ1ODIx
-NjQ3LC0xNTEyODk5Mzg2LDExMDkxMTUxMTQsLTcwNDIzMjQ5Ny
-wtMTY0NzI3NzU5MiwtMTI5MjkxNjIxMiw4NzMxMTEwMDMsLTE0
-Mjk1MjU0MTYsLTIwODEzNDQ0MDAsLTQ2NzU2OTk4OSwxODY3MT
-QxNzI3LC0xNjk4ODAxMjU3LDIwNDE0NDI5NjVdfQ==
+eyJoaXN0b3J5IjpbLTE2NDYwNDE0MjMsMTkxNzM5OTM4OCwtMT
+M3NTM1MjU0NSwtMzkwOTU5MTI3LC03NDU2ODY3MDgsMTQ0NTgy
+MTY0NywtMTUxMjg5OTM4NiwxMTA5MTE1MTE0LC03MDQyMzI0OT
+csLTE2NDcyNzc1OTIsLTEyOTI5MTYyMTIsODczMTExMDAzLC0x
+NDI5NTI1NDE2LC0yMDgxMzQ0NDAwLC00Njc1Njk5ODksMTg2Nz
+E0MTcyNywtMTY5ODgwMTI1NywyMDQxNDQyOTY1XX0=
 -->
