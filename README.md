@@ -70,16 +70,16 @@ You will be able to call all methods on CustomerDAO and OrderDAO from `JDBCExecu
  Execute the app passing the parameters as arguments:
  - Post - args: `post "message with less than 280 chars" "-14.7654:-20.6771"` latitude e longitude are mandatory.
  - Show - args:`show 12345678912344123` (tweet id)
- - Delete - args: `delete 12345665432,1234567654321,2345676543` (list of tweet ids to be deleted.  
+ - Delete - args: `delete 12345665432,1234567654321,2345676543` (list of tweet ids to be deleted separated by comma).  
  
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4Mjk2MTE4MiwtMTY0NjA0MTQyMywxOT
-E3Mzk5Mzg4LC0xMzc1MzUyNTQ1LC0zOTA5NTkxMjcsLTc0NTY4
-NjcwOCwxNDQ1ODIxNjQ3LC0xNTEyODk5Mzg2LDExMDkxMTUxMT
-QsLTcwNDIzMjQ5NywtMTY0NzI3NzU5MiwtMTI5MjkxNjIxMiw4
-NzMxMTEwMDMsLTE0Mjk1MjU0MTYsLTIwODEzNDQ0MDAsLTQ2Nz
-U2OTk4OSwxODY3MTQxNzI3LC0xNjk4ODAxMjU3LDIwNDE0NDI5
-NjVdfQ==
+eyJoaXN0b3J5IjpbLTIwMDU0OTYyODQsLTk4Mjk2MTE4MiwtMT
+Y0NjA0MTQyMywxOTE3Mzk5Mzg4LC0xMzc1MzUyNTQ1LC0zOTA5
+NTkxMjcsLTc0NTY4NjcwOCwxNDQ1ODIxNjQ3LC0xNTEyODk5Mz
+g2LDExMDkxMTUxMTQsLTcwNDIzMjQ5NywtMTY0NzI3NzU5Miwt
+MTI5MjkxNjIxMiw4NzMxMTEwMDMsLTE0Mjk1MjU0MTYsLTIwOD
+EzNDQ0MDAsLTQ2NzU2OTk4OSwxODY3MTQxNzI3LC0xNjk4ODAx
+MjU3LDIwNDE0NDI5NjVdfQ==
 -->
