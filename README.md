@@ -43,7 +43,7 @@ E.g., To search for the word "data" on all files on the /user/app directory and 
 The app expects the database connection variables (PGHOST=host address, PGUSER=username, PGPASSWORD=yourpassword) to be passed as environmental variables or as arguments on the previous order.
 E.g.,`/jdbc/java JDBCExecutor localhost postgres 1234`
 
-You will be able to call all methods on CustomerDAO and OrderDAO from `JDBCExecutor` , using the main method. You will notice that it already contains a few examples.
+You will be able to call all methods on CustomerDAO and OrderDAO from `JDBCExecutor`, using the main method. You will notice that it already contains a few examples.
 
  <a name="twitter"></a>
  # Twitter
@@ -62,17 +62,21 @@ You will be able to call all methods on CustomerDAO and OrderDAO from `JDBCExecu
 - `JsonParser` implements methods to parse from Json to object and from object to JSON.
 - `TwitterUtil` implements methods to validate data.
 - `TwitterServiceImp` implements `TwitterService` business implementation of the methods post, show and delete tweets.
-- `TwitterCLIRunner` receive args and executs the correct methods.
-- `TwitterCLI` creates all componets and executes the app.
-- `TwitterCLIBean`, `TwitterCLIComponentScan`, `TwitterCLISpringBoot` three alternative ways to execute the app.
+- `TwitterCLIRunner` receive args and executes the correct methods.
+- `TwitterCLI` creates all components and executes the app.
+- `TwitterCLIBean`, `TwitterCLIComponentScan`, `TwitterCLISpringBoot` three alternative ways to execute the app using Spring.
+
+ ### Usage
+ 
+ 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjMzMDE3OTMsLTE2NDYwNDE0MjMsMT
-kxNzM5OTM4OCwtMTM3NTM1MjU0NSwtMzkwOTU5MTI3LC03NDU2
-ODY3MDgsMTQ0NTgyMTY0NywtMTUxMjg5OTM4NiwxMTA5MTE1MT
-E0LC03MDQyMzI0OTcsLTE2NDcyNzc1OTIsLTEyOTI5MTYyMTIs
-ODczMTExMDAzLC0xNDI5NTI1NDE2LC0yMDgxMzQ0NDAwLC00Nj
-c1Njk5ODksMTg2NzE0MTcyNywtMTY5ODgwMTI1NywyMDQxNDQy
-OTY1XX0=
+eyJoaXN0b3J5IjpbMTQzMTQ1NzcwNSwtMTY0NjA0MTQyMywxOT
+E3Mzk5Mzg4LC0xMzc1MzUyNTQ1LC0zOTA5NTkxMjcsLTc0NTY4
+NjcwOCwxNDQ1ODIxNjQ3LC0xNTEyODk5Mzg2LDExMDkxMTUxMT
+QsLTcwNDIzMjQ5NywtMTY0NzI3NzU5MiwtMTI5MjkxNjIxMiw4
+NzMxMTEwMDMsLTE0Mjk1MjU0MTYsLTIwODEzNDQ0MDAsLTQ2Nz
+U2OTk4OSwxODY3MTQxNzI3LC0xNjk4ODAxMjU3LDIwNDE0NDI5
+NjVdfQ==
 -->
