@@ -2,12 +2,15 @@ package ca.jrvs.apps.twitter;
 
 import ca.jrvs.apps.twitter.dto.Tweet;
 import ca.jrvs.apps.twitter.service.TwitterService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
-
-class TwitterCLIRunner {
+@Component
+public class TwitterCLIRunner {
   private TwitterService twitterService;
 
-  TwitterCLIRunner(TwitterService service) {
+  @Autowired
+  public TwitterCLIRunner(TwitterService service) {
     this.twitterService = service;
   }
 
@@ -55,7 +58,7 @@ class TwitterCLIRunner {
       }
   }
 
-  void run(String[] args) {
+  public void run(String[] args) {
     if (args.length < 2) {
       throw new RuntimeException("USAGE: TwitterCLIApp post|show|deleteTweets args");
     }

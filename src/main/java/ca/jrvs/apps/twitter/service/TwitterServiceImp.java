@@ -2,17 +2,19 @@ package ca.jrvs.apps.twitter.service;
 
 import ca.jrvs.apps.twitter.dao.CrdRepository;
 import ca.jrvs.apps.twitter.dto.Tweet;
-import oauth.signpost.exception.OAuthException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 import static ca.jrvs.apps.twitter.util.TwitterUtil.*;
 
+@Service
 public class TwitterServiceImp implements TwitterService {
   private CrdRepository dao;
 
+  @Autowired
   public TwitterServiceImp(CrdRepository dao) {
     this.dao = dao;
   }

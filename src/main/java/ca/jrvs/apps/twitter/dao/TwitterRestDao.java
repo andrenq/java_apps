@@ -8,11 +8,15 @@ import oauth.signpost.exception.OAuthExpectationFailedException;
 import oauth.signpost.exception.OAuthMessageSignerException;
 import org.apache.http.HttpResponse;
 import org.apache.http.util.EntityUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.URLEncoder;
 import static ca.jrvs.apps.twitter.example.JsonParser.toObjectFromJson;
 
+@Repository
 public class TwitterRestDao implements CrdRepository<Tweet, String> {
   private final String baseURL = "https://api.twitter.com/1.1/statuses/";
 
@@ -21,6 +25,7 @@ public class TwitterRestDao implements CrdRepository<Tweet, String> {
 
   private HttpHelper httpHelper;
 
+  @Autowired
   public TwitterRestDao(HttpHelper httpHelper) {
     this.httpHelper = httpHelper;
   }
