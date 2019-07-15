@@ -2,12 +2,11 @@
 This repository contains three java apps.
 - [Java Grep app](#grep) - Implementation of the grep command in java. The app searches for a text pattern recursively in a given directory and outputs all matched lines to a file.
 - [JDBC](#jdbc) - Example of Java Database Connectivity (JDBC) API usage. This app uses Data Access Object (DAO) to read and manage data from a Postgre database.
-- [Twitter](#twitter)- 
+- [Twitter](#twitter)- Implementation of a Twitter client that can post new tweets, show old tweets by given id and delete tweets by id.
 <a name="grep"></a>
 # Java Grep app
 ### Getting Started
-For the Java Grep app, no installations are required. All you need is to execute the code using Java 8.
-
+For the Java Grep app, no installations are required. All you need is to execute the code using Java 8, and to include all the dependencies on the pom.xml file.
 This app is divided into three files:
  - `JavaGrep` is the application interface. Contains methods and attributes.
  - `JavaGrepImp` is the implementation of `JavaGrep`. Implements all methods and adds new ones.
@@ -46,14 +45,38 @@ E.g.,`/jdbc/java JDBCExecutor localhost postgres 1234`
 
 You will be able to call all methods on CustomerDAO and OrderDAO from `JDBCExecutor` , using the main method. You will notice that it already contains a few examples.
 
-
  <a name="twitter"></a>
  # Twitter
+ ### Getting Started
+ For the Twitter app, no installations are required. You need to execute the code using Java 8, and to include all the dependencies on the pom.xml file.
+ You will also need to get a twitter developer account:[https://developer.twitter.com/](https://developer.twitter.com/). 
+ With you twitter developer account created, set your consumerKey, consumerSecret, accessToken and tokenSecret as enviromental variables.
+ 
+ The app is divided as following:
+![image](https://drive.google.com/uc?export=view&id=1_RH6sYWUKTJ6hStQWGrE5zPPkxRRPPCn)
+
+
+- `ApacheHttpHelper` implements `HttpHelper`. It is responsible for the connection with the Twitter Api.
+- `TwitterRestDao` implements `CrdRepository`. It recives the response from the HttpHelper and converts to tweet objects.
+- Data transfer objects: `Coordinates`, `Entities`, `Hashtag`, `Tweet`, `UserMention`
+- `JsonParser` implements methods to parse from Json to object and from object to Json.
+- `TwitterServiceImp` implements `TwitterService` business implementation of the methods post, show and delete tweet.
+- `TwitterCLIRunner` recive args and is respo
+TwitterCLI
+
+
+TwitterCLIBean.class
+TwitterCLIComponentScan.class
+TwitterCLISpringBoot.class
+
+util
+TwitterUtil.class
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNzM5OTM4OCwtMTM3NTM1MjU0NSwtMz
-kwOTU5MTI3LC03NDU2ODY3MDgsMTQ0NTgyMTY0NywtMTUxMjg5
-OTM4NiwxMTA5MTE1MTE0LC03MDQyMzI0OTcsLTE2NDcyNzc1OT
-IsLTEyOTI5MTYyMTIsODczMTExMDAzLC0xNDI5NTI1NDE2LC0y
-MDgxMzQ0NDAwLC00Njc1Njk5ODksMTg2NzE0MTcyNywtMTY5OD
-gwMTI1NywyMDQxNDQyOTY1XX0=
+eyJoaXN0b3J5IjpbLTE2NDYwNDE0MjMsMTkxNzM5OTM4OCwtMT
+M3NTM1MjU0NSwtMzkwOTU5MTI3LC03NDU2ODY3MDgsMTQ0NTgy
+MTY0NywtMTUxMjg5OTM4NiwxMTA5MTE1MTE0LC03MDQyMzI0OT
+csLTE2NDcyNzc1OTIsLTEyOTI5MTYyMTIsODczMTExMDAzLC0x
+NDI5NTI1NDE2LC0yMDgxMzQ0NDAwLC00Njc1Njk5ODksMTg2Nz
+E0MTcyNywtMTY5ODgwMTI1NywyMDQxNDQyOTY1XX0=
 -->
