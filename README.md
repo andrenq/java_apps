@@ -68,14 +68,14 @@ You will be able to call all methods on CustomerDAO and OrderDAO from `JDBCExecu
 
  ### Usage
  Execute the app passing the parameters as arguments:
- - Post: `post "message with less than 280 chars" "-14.7654:-20.6771"` latitude e longitude are mandatory.
- - Show: args:`show 12345678912344123` (tweet id)
- - delete: args  
+ - Post - args: `post "message with less than 280 chars" "-14.7654:-20.6771"` latitude e longitude are mandatory.
+ - Show - args:`show 12345678912344123` (tweet id)
+ - Delete - args: `delete 12345665432,1234567654321,2345676543` (list of tweet ids to be deleted.  
  
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MDIwNzI2NSwtMTY0NjA0MTQyMywxOT
+eyJoaXN0b3J5IjpbLTk4Mjk2MTE4MiwtMTY0NjA0MTQyMywxOT
 E3Mzk5Mzg4LC0xMzc1MzUyNTQ1LC0zOTA5NTkxMjcsLTc0NTY4
 NjcwOCwxNDQ1ODIxNjQ3LC0xNTEyODk5Mzg2LDExMDkxMTUxMT
 QsLTcwNDIzMjQ5NywtMTY0NzI3NzU5MiwtMTI5MjkxNjIxMiw4
