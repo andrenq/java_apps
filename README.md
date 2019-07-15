@@ -59,13 +59,10 @@ You will be able to call all methods on CustomerDAO and OrderDAO from `JDBCExecu
 CrdRepository.class
 - `ApacheHttpHelper` implements `HttpHelper`. It is responsible for the connection with the Twitter Api.
 - `TwitterRestDao` recives the response from the HttpHelper and converts to tweet object.
--Data transfer objects: `Coordinates`, `Entities`, `Hashtag`, `Tweet`, `UserMention`
--`JsonParser` imple
-
-TwitterApiTest.class
+- Data transfer objects: `Coordinates`, `Entities`, `Hashtag`, `Tweet`, `UserMention`
+- `JsonParser` implements methods to parse from Json to boject and from object to Json.
 service
-TwitterService.class
-TwitterServiceImp.class
+- `TwitterServiceImp` implements `TwitterService`
 spring
 TwitterCLIBean.class
 TwitterCLIComponentScan.class
@@ -76,10 +73,10 @@ util
 TwitterUtil.class
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTI5NDczNjAsMTkxNzM5OTM4OCwtMT
-M3NTM1MjU0NSwtMzkwOTU5MTI3LC03NDU2ODY3MDgsMTQ0NTgy
-MTY0NywtMTUxMjg5OTM4NiwxMTA5MTE1MTE0LC03MDQyMzI0OT
-csLTE2NDcyNzc1OTIsLTEyOTI5MTYyMTIsODczMTExMDAzLC0x
-NDI5NTI1NDE2LC0yMDgxMzQ0NDAwLC00Njc1Njk5ODksMTg2Nz
-E0MTcyNywtMTY5ODgwMTI1NywyMDQxNDQyOTY1XX0=
+eyJoaXN0b3J5IjpbMTMwNjQxMTk0LDE5MTczOTkzODgsLTEzNz
+UzNTI1NDUsLTM5MDk1OTEyNywtNzQ1Njg2NzA4LDE0NDU4MjE2
+NDcsLTE1MTI4OTkzODYsMTEwOTExNTExNCwtNzA0MjMyNDk3LC
+0xNjQ3Mjc3NTkyLC0xMjkyOTE2MjEyLDg3MzExMTAwMywtMTQy
+OTUyNTQxNiwtMjA4MTM0NDQwMCwtNDY3NTY5OTg5LDE4NjcxND
+E3MjcsLTE2OTg4MDEyNTcsMjA0MTQ0Mjk2NV19
 -->
