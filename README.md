@@ -50,15 +50,15 @@ You will be able to call all methods on CustomerDAO and OrderDAO from `JDBCExecu
  ### Getting Started
  For the Twitter app, no installations are required. You need to execute the code using Java 8, and to include all the dependencies on the pom.xml file.
  You will also need to get a twitter developer account:[https://developer.twitter.com/](https://developer.twitter.com/). 
- With you twitter developer account created, set your consumerKey, consumerSecret, accessToken and as enviromental variables.
+ With you twitter developer account created, set your consumerKey, consumerSecret, accessToken and tokenSecret as enviromental variables.
+ 
  The app is divided as following:
- ![image](https://drive.google.com/uc?export=view&id=1_RH6sYWUKTJ6hStQWGrE5zPPkxRRPPCn)
+![image](https://drive.google.com/uc?export=view&id=1_RH6sYWUKTJ6hStQWGrE5zPPkxRRPPCn)
  twitter
    dao
 CrdRepository.class
 - `ApacheHttpHelper` implements `HttpHelper`. It is responsible for the connection with the Twitter Api.
-HttpMethod.class
-TwitterRestDao.class
+TwitterRestDao
 dto
 Coordinates.class
 Entities.class
@@ -81,10 +81,10 @@ util
 TwitterUtil.class
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDUxNDQyNDQsMTkxNzM5OTM4OCwtMT
-M3NTM1MjU0NSwtMzkwOTU5MTI3LC03NDU2ODY3MDgsMTQ0NTgy
-MTY0NywtMTUxMjg5OTM4NiwxMTA5MTE1MTE0LC03MDQyMzI0OT
-csLTE2NDcyNzc1OTIsLTEyOTI5MTYyMTIsODczMTExMDAzLC0x
-NDI5NTI1NDE2LC0yMDgxMzQ0NDAwLC00Njc1Njk5ODksMTg2Nz
-E0MTcyNywtMTY5ODgwMTI1NywyMDQxNDQyOTY1XX0=
+eyJoaXN0b3J5IjpbLTE3NjAxMzc5MiwxOTE3Mzk5Mzg4LC0xMz
+c1MzUyNTQ1LC0zOTA5NTkxMjcsLTc0NTY4NjcwOCwxNDQ1ODIx
+NjQ3LC0xNTEyODk5Mzg2LDExMDkxMTUxMTQsLTcwNDIzMjQ5Ny
+wtMTY0NzI3NzU5MiwtMTI5MjkxNjIxMiw4NzMxMTEwMDMsLTE0
+Mjk1MjU0MTYsLTIwODEzNDQ0MDAsLTQ2NzU2OTk4OSwxODY3MT
+QxNzI3LC0xNjk4ODAxMjU3LDIwNDE0NDI5NjVdfQ==
 -->
