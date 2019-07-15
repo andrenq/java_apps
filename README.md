@@ -58,7 +58,7 @@ You will be able to call all methods on CustomerDAO and OrderDAO from `JDBCExecu
    dao
 CrdRepository.class
 - `ApacheHttpHelper` implements `HttpHelper`. It is responsible for the connection with the Twitter Api.
-- TwitterRestDao recives the response from the 
+- `TwitterRestDao` recives the response from the HttpHelper and converts to tweet object.
 dto
 Coordinates.class
 Entities.class
@@ -81,7 +81,7 @@ util
 TwitterUtil.class
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NjQxOTg1NSwxOTE3Mzk5Mzg4LC0xMz
+eyJoaXN0b3J5IjpbLTQ3ODQ0Mjg2NywxOTE3Mzk5Mzg4LC0xMz
 c1MzUyNTQ1LC0zOTA5NTkxMjcsLTc0NTY4NjcwOCwxNDQ1ODIx
 NjQ3LC0xNTEyODk5Mzg2LDExMDkxMTUxMTQsLTcwNDIzMjQ5Ny
 wtMTY0NzI3NzU5MiwtMTI5MjkxNjIxMiw4NzMxMTEwMDMsLTE0
