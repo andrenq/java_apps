@@ -54,13 +54,12 @@ You will be able to call all methods on CustomerDAO and OrderDAO from `JDBCExecu
  
  The app is divided as following:
 ![image](https://drive.google.com/uc?export=view&id=1_RH6sYWUKTJ6hStQWGrE5zPPkxRRPPCn)
- twitter
-   dao
-CrdRepository.class
+
+
 - `ApacheHttpHelper` implements `HttpHelper`. It is responsible for the connection with the Twitter Api.
-- `TwitterRestDao` recives the response from the HttpHelper and converts to tweet object.
+- `TwitterRestDao` implements `CrdRepository`. It recives the response from the HttpHelper and converts to tweet objects.
 - Data transfer objects: `Coordinates`, `Entities`, `Hashtag`, `Tweet`, `UserMention`
-- `JsonParser` implements methods to parse from Json to boject and from object to Json.
+- `JsonParser` implements methods to parse from Json to object and from object to Json.
 service
 - `TwitterServiceImp` implements `TwitterService`
 spring
@@ -73,7 +72,7 @@ util
 TwitterUtil.class
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNjQxMTk0LDE5MTczOTkzODgsLTEzNz
+eyJoaXN0b3J5IjpbODIxODM5NDM3LDE5MTczOTkzODgsLTEzNz
 UzNTI1NDUsLTM5MDk1OTEyNywtNzQ1Njg2NzA4LDE0NDU4MjE2
 NDcsLTE1MTI4OTkzODYsMTEwOTExNTExNCwtNzA0MjMyNDk3LC
 0xNjQ3Mjc3NTkyLC0xMjkyOTE2MjEyLDg3MzExMTAwMywtMTQy
