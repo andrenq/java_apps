@@ -67,12 +67,13 @@ You will be able to call all methods on CustomerDAO and OrderDAO from `JDBCExecu
 - `TwitterCLIBean`, `TwitterCLIComponentScan`, `TwitterCLISpringBoot` three alternative ways to execute the app using Spring.
 
  ### Usage
- Execute the app passing the parameters as ag
+ Execute the app passing the parameters as arguments:
+ - Post: `post "message with less than 280 chars" "-14.7654:-20` 
  
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODI0NTAwNTAsLTE2NDYwNDE0MjMsMT
+eyJoaXN0b3J5IjpbLTIxNDE2MzA0ODIsLTE2NDYwNDE0MjMsMT
 kxNzM5OTM4OCwtMTM3NTM1MjU0NSwtMzkwOTU5MTI3LC03NDU2
 ODY3MDgsMTQ0NTgyMTY0NywtMTUxMjg5OTM4NiwxMTA5MTE1MT
 E0LC03MDQyMzI0OTcsLTE2NDcyNzc1OTIsLTEyOTI5MTYyMTIs
